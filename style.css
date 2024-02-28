@@ -403,6 +403,9 @@ footer .accordion-body{
 footer .accordion{
     --bs-accordion-active-color:#fff;
     --bs-accordion-active-bg:#212529;
+    --bs-accordion-border-radius:0px;
+    --bs-accordion-inner-border-radius:0px;
+    --bs-accordion-btn-focus-box-shadow:none;
 }
 
 /* subscribe button css */
