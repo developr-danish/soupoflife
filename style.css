@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@font-face {
+    font-family: dancing-script;
+    src: url(assets/font/DancingScript-VariableFont_wght.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+/* marquee part start from here */
+marquee li{
+    margin: 0px 3rem;
+    font-size: 0.8rem;
+}
+/* marquee part end from here */
+
+/* navbar part start from here */
+.navbar a{
+    color: #000 !important;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.navbar img{
+    width: 75px;
+    height: 75px;
+}
+.navbar form #user
+{
+margin-right: 1rem;
+font-size: 1.8rem;
+}
+.navbar form #cart{
+    font-size: 1.8rem;
+    margin-left: 1rem;
+}
+.nav-item:hover .dropdown-menu{
+    display: block !important;
+}
+.shop-all{
+    border-right: 1px solid black !important;
+}
+#mega-menu{
+    padding: 10px;
+    min-width: 600px;
+    left: -450px;
+}
+/* navbar part end from here */
+
+
+/* product part start from here */
+
+.cards{
+    background:linear-gradient(90deg , #E7F4F7 , #e9faef);
+    border-radius: 5px;
+    padding: 0.6rem;
+}
+.cards img{
+    transition: 1s;
+}
+.cards:hover img{
+    transform: translatey(-15px);
+}
+/* product part end from here */
+
+/* multi product part start from here */
+.mul-product{
+    width: 100%;
+    height: 100%;
+}
+.searchbar .search {
+    display: inline-block;
+    border: 0px solid grey;
+    padding: 0px;
+    transition: all 0.15s ease;
+}
+.searchbar input[type=text] {
+    font-size: 14px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    padding: 10px;
+    width: 15em;
+	margin: 10px 2px 0 0;
+}
+.btn-group .button {
+    background-color: #E1E1E1;
+    width: 7rem;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    margin: 10px 2px;
+}
+.btn-group {
+    display: inline-block;
+}
+.btn-group .button:hover {
+    background-color: #888;
+    color: white;
+}
+.btn-group .button:active, .btn-group .button:focus {
+    background-color: #888;
+    color: white;
+}
+.container-btn {
+    margin: 0 0 20px 25px;
+    display: flex;
+    overflow: scroll;
+}
+.container-btn::-webkit-scrollbar{
+    display: none;
+}
+.vl {
+    border-left: 1px solid lightgrey;
+    height: 30px;
+    margin: auto 20px;
+}
+
+/* multi product part end from here */
+
+
+/* supplement part start from here */
+.supplement{
+    width: 100%;
+    height: 80vh;
+    background: url(https://wellbeingnutrition.com/cdn/shop/files/clean-nutrition-desktop.jpg?v=1643722195);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.content{
+    width: 30%;
+    margin-left: 3rem;
+}
+.content h1{
+    font-size: 3rem;
+    font-weight: 800;
+    line-height:1;
+    letter-spacing: -1px;
+}
+.content p , .nut-data p{
+    color: #8C848B;
+    font-size: 1.1rem;
+}
+.content a , .nut-data a{
+    display: block;
+    line-height: 2.4;
+    text-decoration: underline;
+    color: #000;
+    font-size: 1.3rem;
+    transition: 0.5s;
+    font-weight: 600;
+}
+.content a:hover {
+    color: #8C848B;
+}
+/* supplement part end from here */
+
+
+/* nutrition part start from here */
+.nut-data{
+    margin-left: 3rem;
+}
+.nut-data h1{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+
+}
+ .nut-data a:hover {
+    color: #8C848B;
+}
+/* nutrition part end from here */
+
+/* featured product start from here */
+#featured{
+    width: 100%;
+    background-color: #EDF7F9;
+    height: 100%;
+}
+#featured .card{
+    background-color: transparent;
+    border:none;
+    padding: 1rem;
+}
+#featured .card h4{
+    font-size: 1.2rem;
+}
+#featured button , .mul-product button{
+    border: 2px solid #7EA4B1;
+    padding: 0.6rem 1.5rem;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+#featured button:hover{
+    background-color: #7EA4B1;
+    color: #fff;
+}
+.mul-product button:hover{
+    background-color: #7EA4B1;
+    color: #fff;
+}
+/* featured product end from here */
+
+
+/* review part start from here */
+#review-part{
+    width: 100%;
+    height: 100%;
+}
+.wrapper {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .rows {
+    width: 100%;
+    clear: both;
+    overflow: auto;
+    background-color: #EFF9FA;
+    position: relative;
+    padding: 0;
+  }
+  
+  .row-features {
+    position: relative;
+    
+  }
+  
+  .new-feature-slider {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    .feature-slide {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: all .5s ease;
+      .feature-slide-image {
+        img {
+          width: 100%;
+          display: block;
+        }
+      }
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
+  
+  .block-wrap {
+    position: relative;
+    width: 100%;
+    &:before {
+      content: "";
+      width: 100%;
+      padding-top: 100%;
+      display: block;
+    }
+  }
+  
+  .w50 {
+    width: 50%;
+    float: left;
+  }
+  
+  .h50:before {
+    padding-top: 50%;
+  }
+  
+  .block {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  
+  .content-centered {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    width: 100%;
+    max-width: 25em;
+    transform: translate(-50%,-50%);
+  }
+  
+  .controls {
+    box-sizing: border-box;
+    width: 80px;
+    height: 160px;
+    position: absolute;
+    z-index: 9999;
+    border-right: solid 8px rgba(93,193,195,0.4);
+    overflow: visible;
+    .control {
+      box-sizing: border-box;
+      width: 80px;
+      height: 80px;
+      display: block;
+      background: #fff;
+      cursor: pointer;
+      transition: all .3s ease;
+      position: relative;
+      float: right;
+      &:first-child {
+        border-bottom: 1px solid rgba(4,68,86,0.2);
+      }
+      &.button-next {
+        transform: rotate(180deg);
+      }
+      &:before,
+      &:after {
+        width: 20px;
+        height: 2px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: block;
+        transform-origin: left center;
+        content: "";
+        background-color: #333f4a;
+        transition: all .3s ease;
+      }
+      &:before {
+        transform: translate(-50%,-50%)   rotate(45deg);
+      }
+      &:after {
+        transform: translate(-50%,-50%) rotate(-45deg);
+      }
+      &:hover {
+        background-color: #5dc1c3;
+        &:before,
+        &:after {
+          background-color: white;
+        }
+      }
+    }
+  }
+  
+  .new-feature-controls {
+    bottom: 10px;
+    right: 50%;
+  }
+/* review part end from here */
+
+/* partnet part start from here */
+#partner-brand{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #E7F4F7 , #e9faef);
+}
+#partner-brand img{
+    margin: 0px 3rem;
+}
+/* partnet part end from here */
+
+/* footer part start from here */
+footer{
+    width: 100%;
+    height: 100%;
+}
+footer .links a , .accordion-body a{
+    text-decoration: none;
+    display: block;
+    color: #949494;
+    line-height: 2.3;
+    font-size: 1.2rem;
+}
+footer .links a:hover{
+    color: #807F7F;
+}
+footer .accordion-body a:hover{
+    color: #807F7F;
+}
+footer .accordion-item{
+    border: none ;
+    border-bottom: 2px solid #fff;
+}
+footer .accordion-button{
+    background-color: #212529;
+    color: #fff;
+}
+footer .accordion-body{
+    background-color: #212529;
+    color: #838282;
+}
+/* subscribe button css */
+.containers {
+    margin-top: 2rem;
+}
+
+.login_bar {
+	width: 300px;
+	height: 50px;
+	background: white;
+	border-radius: 10px;
+	top: 50%;
+	position: relative;
+    z-index: 1;
+	overflow: hidden;
+    color: #000;
+}
+
+.login {
+	background: transparent;
+	position: absolute;
+	height: 100%;
+	width: 190px;
+	padding-left: 10px;
+	text-align: left;
+	line-height: 50px;
+	vertical-align: middle;
+	z-index: 10;
+	-webkit-transition: transform 0.2s ease-in-out 0s;
+	   -moz-transition: transform 0.2s ease-in-out 0s;
+	     -o-transition: transform 0.2s ease-in-out 0s;
+	        transition: transform 0.2s ease-in-out 0s;
+}
+
+.login_active {
+	-webkit-transform: translateX(300px);
+	   -moz-transform: translateX(300px);
+	    -ms-transform: translateX(300px);
+	     -o-transform: translateX(300px);
+	        transform: translateX(300px);
+}
+
+.subscribe_button:hover{
+	background-color: #222A33;
+	cursor:pointer;
+}
+
+.subscribe_button {
+	background: #171D23;
+	position: absolute;
+	top: -50px;
+	left: 200px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	height: 150px;
+	width: 100px;
+	text-align: center;
+	line-height: 150px;
+	vertical-align: middle;	
+	color: white;
+	-webkit-transition: transform 0.5s ease 0s;
+	   -moz-transition: transform 0.5s ease 0s;
+	     -o-transition: transform 0.5s ease 0s;
+	        transition: transform 0.5s ease 0s;
+}
+
+.subscribe_button_active{
+	-webkit-transform: translateY(50px);
+	   -moz-transform: translateY(50px);
+	    -ms-transform: translateY(50px);
+	     -o-transform: translateY(50px);
+	        transform: translateY(50px);
+}
+
+.subscribing{
+	background: #CDD4DC;
+	height: 100%;
+	width: 300px;
+	z-index: 5;
+	position: absolute;
+	left:-300px;
+	display: inline-block;
+	-webkit-transition: transform 1s ease 0s ;
+	   -moz-transition: transform 1s ease 0s ;
+	     -o-transition: transform 1s ease 0s ;
+	        transition: transform 1s ease 0s ;
+}
+
+.subscribing_active {
+	-webkit-transform: translateX(300px);
+	   -moz-transform: translateX(300px);
+	    -ms-transform: translateX(300px);
+	     -o-transform: translateX(300px);
+	        transform: translateX(300px);
+}
+
+.thanks{
+	background: transparent;
+	height: 100%;
+	width: 300px;
+	z-index: 5;
+	text-align: left;
+	line-height: 50px;
+	vertical-align: middle;
+	padding-left: 10px;
+	position: absolute;
+	top:50px;
+	display: inline-block;
+	-webkit-transition: transform 0.5s ease 0s ;
+	   -moz-transition: transform 0.5s ease 0s ;
+	     -o-transition: transform 0.5s ease 0s ;
+	        transition: transform 0.5s ease 0s ;
+}
+
+.thanks_active {
+	-webkit-transform: translateY(-50px);
+	   -moz-transform: translateY(-50px);
+	    -ms-transform: translateY(-50px);
+	     -o-transform: translateY(-50px);
+	        transform: translateY(-50px);
+}
+/* subscribe button css */
+.social-links{
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 25px;
+}
+.social-links i{
+    color: #fff;
+    font-size: 1.7rem;
+}
+.hr{
+    border-bottom: 1px solid #8c848b79;
+}
+
+/* footer part end from here */
