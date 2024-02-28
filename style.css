@@ -400,6 +400,11 @@ footer .accordion-body{
     background-color: #212529;
     color: #838282;
 }
+footer .accordion{
+    --bs-accordion-active-color:#fff;
+    --bs-accordion-active-bg:#212529;
+}
+
 /* subscribe button css */
 .containers {
     margin-top: 2rem;
