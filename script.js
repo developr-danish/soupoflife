@@ -16,7 +16,7 @@
             1000:{
                 items:3,
                 nav:false,
-                loop:true
+                loop:false
             }
         }
     })

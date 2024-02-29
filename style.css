@@ -69,23 +69,9 @@ font-size: 1.8rem;
     width: 100%;
     height: 100%;
 }
-.searchbar .search {
-    display: inline-block;
-    border: 0px solid grey;
-    padding: 0px;
-    transition: all 0.15s ease;
-}
-.searchbar input[type=text] {
-    font-size: 14px;
-    border: 1px solid #888;
-    border-radius: 5px;
-    padding: 10px;
-    width: 15em;
-	margin: 10px 2px 0 0;
-}
 .btn-group .button {
     background-color: #E1E1E1;
-    width: 7rem;
+    width: 8.5rem;
     padding: 10px;
     text-align: center;
     display: inline-block;
@@ -116,12 +102,6 @@ font-size: 1.8rem;
 .container-btn::-webkit-scrollbar{
     display: none;
 }
-.vl {
-    border-left: 1px solid lightgrey;
-    height: 30px;
-    margin: auto 20px;
-}
-
 /* multi product part end from here */
 
 
