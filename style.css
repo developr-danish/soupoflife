@@ -17,6 +17,14 @@ marquee li{
 /* marquee part end from here */
 
 /* navbar part start from here */
+.navbar{
+    border: 1px solid transparent; 
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    position: sticky !important;
+    top: 0;
+    z-index: 9999;
+}
 .navbar a{
     color: #000 !important;
     font-size: 1rem;
@@ -38,13 +46,10 @@ font-size: 1.8rem;
 .nav-item:hover .dropdown-menu{
     display: block !important;
 }
-.shop-all{
-    border-right: 1px solid black !important;
-}
 #mega-menu{
     padding: 10px;
-    min-width: 600px;
-    left: -350px;
+    min-width: 400px;
+    left: -150px;
 }
 /* navbar part end from here */
 
@@ -52,7 +57,7 @@ font-size: 1.8rem;
 /* product part start from here */
 
 .cards{
-    background:linear-gradient(90deg , #E7F4F7 , #e9faef);
+    background:linear-gradient(90deg , #6a868c7f , #7dd59c36);
     border-radius: 5px;
     padding: 0.6rem;
 }
@@ -63,6 +68,14 @@ font-size: 1.8rem;
     transform: translatey(-15px);
 }
 /* product part end from here */
+
+
+/* info part start from here */
+.about-page img{
+    width: 100px;
+    height: 100px;
+}
+/* info part start from here */
 
 /* multi product part start from here */
 .mul-product{
@@ -128,9 +141,9 @@ font-size: 1.8rem;
 .supplement{
     width: 100%;
     height: 80vh;
-    background: url(https://wellbeingnutrition.com/cdn/shop/files/clean-nutrition-desktop.jpg?v=1643722195);
-    background-position: center;
+    background: url(https://images.pexels.com/photos/105028/pexels-photo-105028.jpeg);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 .content{
     width: 30%;
@@ -143,7 +156,7 @@ font-size: 1.8rem;
     letter-spacing: -1px;
 }
 .content p , .nut-data p{
-    color: #8C848B;
+    color: #221921;
     font-size: 1.1rem;
 }
 .content a , .nut-data a{
@@ -179,7 +192,7 @@ font-size: 1.8rem;
 /* featured product start from here */
 #featured{
     width: 100%;
-    background-color: #EDF7F9;
+    background-color: #ebebeb;
     height: 100%;
 }
 #featured .card{
@@ -191,10 +204,11 @@ font-size: 1.8rem;
     font-size: 1.2rem;
 }
 #featured button , .mul-product button{
-    border: 2px solid #7EA4B1;
+    border: 2px solid #131112;
     padding: 0.6rem 1.5rem;
     border-radius: 50px;
     transition: 0.5s;
+    background-color: rgba(182, 180, 180, 0.625);
 }
 #featured button:hover{
     background-color: #7EA4B1;
@@ -304,7 +318,7 @@ font-size: 1.8rem;
     width: 80px;
     height: 160px;
     position: absolute;
-    z-index: 9999;
+    z-index: 999;
     border-right: solid 8px rgba(93,193,195,0.4);
     overflow: visible;
     .control {
@@ -373,6 +387,8 @@ font-size: 1.8rem;
 footer{
     width: 100%;
     height: 100%;
+    background-color: #000;
+    z-index: 9999;
 }
 footer .links a , .accordion-body a{
     text-decoration: none;
@@ -392,11 +408,11 @@ footer .accordion-item{
     border-bottom: 2px solid #fff;
 }
 footer .accordion-button{
-    background-color: #212529;
+    background-color: #000;
     color: #fff;
 }
 footer .accordion-body{
-    background-color: #212529;
+    background-color: #000;
     color: #838282;
 }
 footer .accordion{
@@ -406,128 +422,6 @@ footer .accordion{
     --bs-accordion-inner-border-radius:0px;
     --bs-accordion-btn-focus-box-shadow:none;
 }
-
-/* subscribe button css */
-.containers {
-    margin-top: 2rem;
-}
-
-.login_bar {
-	width: 300px;
-	height: 50px;
-	background: white;
-	border-radius: 10px;
-	top: 50%;
-	position: relative;
-    z-index: 1;
-	overflow: hidden;
-    color: #000;
-}
-
-.login {
-	background: transparent;
-	position: absolute;
-	height: 100%;
-	width: 190px;
-	padding-left: 10px;
-	text-align: left;
-	line-height: 50px;
-	vertical-align: middle;
-	z-index: 10;
-	-webkit-transition: transform 0.2s ease-in-out 0s;
-	   -moz-transition: transform 0.2s ease-in-out 0s;
-	     -o-transition: transform 0.2s ease-in-out 0s;
-	        transition: transform 0.2s ease-in-out 0s;
-}
-
-.login_active {
-	-webkit-transform: translateX(300px);
-	   -moz-transform: translateX(300px);
-	    -ms-transform: translateX(300px);
-	     -o-transform: translateX(300px);
-	        transform: translateX(300px);
-}
-
-.subscribe_button:hover{
-	background-color: #222A33;
-	cursor:pointer;
-}
-
-.subscribe_button {
-	background: #171D23;
-	position: absolute;
-	top: -50px;
-	left: 200px;
-	border-top-right-radius: 10px;
-	border-bottom-right-radius: 10px;
-	height: 150px;
-	width: 100px;
-	text-align: center;
-	line-height: 150px;
-	vertical-align: middle;	
-	color: white;
-	-webkit-transition: transform 0.5s ease 0s;
-	   -moz-transition: transform 0.5s ease 0s;
-	     -o-transition: transform 0.5s ease 0s;
-	        transition: transform 0.5s ease 0s;
-}
-
-.subscribe_button_active{
-	-webkit-transform: translateY(50px);
-	   -moz-transform: translateY(50px);
-	    -ms-transform: translateY(50px);
-	     -o-transform: translateY(50px);
-	        transform: translateY(50px);
-}
-
-.subscribing{
-	background: #CDD4DC;
-	height: 100%;
-	width: 300px;
-	z-index: 5;
-	position: absolute;
-	left:-300px;
-	display: inline-block;
-	-webkit-transition: transform 1s ease 0s ;
-	   -moz-transition: transform 1s ease 0s ;
-	     -o-transition: transform 1s ease 0s ;
-	        transition: transform 1s ease 0s ;
-}
-
-.subscribing_active {
-	-webkit-transform: translateX(300px);
-	   -moz-transform: translateX(300px);
-	    -ms-transform: translateX(300px);
-	     -o-transform: translateX(300px);
-	        transform: translateX(300px);
-}
-
-.thanks{
-	background: transparent;
-	height: 100%;
-	width: 300px;
-	z-index: 5;
-	text-align: left;
-	line-height: 50px;
-	vertical-align: middle;
-	padding-left: 10px;
-	position: absolute;
-	top:50px;
-	display: inline-block;
-	-webkit-transition: transform 0.5s ease 0s ;
-	   -moz-transition: transform 0.5s ease 0s ;
-	     -o-transition: transform 0.5s ease 0s ;
-	        transition: transform 0.5s ease 0s ;
-}
-
-.thanks_active {
-	-webkit-transform: translateY(-50px);
-	   -moz-transform: translateY(-50px);
-	    -ms-transform: translateY(-50px);
-	     -o-transform: translateY(-50px);
-	        transform: translateY(-50px);
-}
-/* subscribe button css */
 .social-links{
     margin-top: 1.5rem;
     display: flex;
