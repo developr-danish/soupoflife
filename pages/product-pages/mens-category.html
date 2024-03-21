@@ -9,6 +9,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
+        * a{
+            text-decoration: none;
+        }
         .title h3{
             border-bottom: 1px solid black;
             padding-bottom: 1.5rem;
@@ -21,29 +24,44 @@
             margin: 1rem auto;
             padding: 1rem 2rem;
             transition: 0.5s;
-            font-size: 1.2rem;
+            font-size: 1rem;
             cursor: pointer;
             text-decoration: none;
+            color: #ffffff;
+        }
+        .filter a:nth-child(1){
+            color: #000;
+        }
+        .filter a:nth-child(3){
             color: #000;
         }
         .filter a:nth-child(2){
-            background-color: rgba(128, 128, 128, 0.532);
+            background-color:#7EA4B1;
             border-radius: 50px;
         }
         .filter a:hover{
-            background-color: rgba(128, 128, 128, 0.532);
+            background-color:#7EA4B1;
             border-radius: 50px;
         }
         .product button{
-        border: 2px solid #131112;
+        width: 80%;
+        border: 1px solid #1311127e;
         padding: 0.6rem 1.5rem;
-        border-radius: 50px;
+        border-radius: 2px;
         transition: 0.5s;
-        background-color: rgba(182, 180, 180, 0.625);
+        background-color: transparent;
+        border-radius: 50px;
+        color: #7EA4B1;
         }
         .product button:hover{
         background-color: #7EA4B1;
         color: #fff;
+    }
+    .product .card .card-title{
+        font-size: 1.2rem;
+    }
+    .product .card .card-text{
+        font-size: 0.8rem;
     }
 
     </style>
@@ -51,117 +69,86 @@
 <body>
 
     <!-- navbar part -->
-    <nav
-    class="navbar navbar-expand-sm navbar-light px-5 py-0"
-    >
-    <div class="container-fluid">
-        <a class="navbar-brand" href="../../index.html"><img src="../../assets/logo.png" alt=""></a>
-        <button
-        class="navbar-toggler d-lg-none"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapsibleNavId"
-        aria-controls="collapsibleNavId"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-        >
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-center ms-md-5" id="collapsibleNavId">
-        <ul class="navbar-nav mt-2 mt-lg-0 gap-3">
-                    <li class="nav-item">
-                        <a class="nav-link" href="all-products.html" aria-current="page"
-                        >View All Products
-                        </a
-                        >
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a
-                        class="nav-link dropdown-toggle"
-                        href="#"
-                        id="dropdownId"
-                        data-bs-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        >Shop</a
-                        >
-                        <div class="dropdown-menu" id="mega-menu" aria-labelledby="dropdownId">
-                            <div class="shop-all">
-                                <div class="just-in">
-                                    <h4>SHOP ALL</h4>
-                                    <h4 class="mt-4">Just In</h4>
-                                    <a class="dropdown-item" href="#">•	Pure Himalayan Shilajit</a>
-                                    <a class="dropdown-item" href="#">•	Wellness Tea</a>
+    <nav class="navbar navbar-expand-lg fixed-top px-md-5">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://soupoflife.in"><img src="../../assets/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link" href="all-products.html" aria-current="page">View
+                                All Products
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Shop</a>
+                            <div class="dropdown-menu" id="mega-menu" aria-labelledby="dropdownId">
+                                <div class="shop-all">
+                                    <div class="just-in">
+                                        <h4>SHOP ALL</h4>
+                                        <h4 class="mt-4">Just In</h4>
+                                        <a class="dropdown-item" href="#">• Pure Himalayan Shilajit</a>
+                                        <a class="dropdown-item" href="#">• Wellness Tea</a>
                                     </div>
                                     <div class="shop-by-category">
-                                        <h3 class="mt-4">Shop By Category</h3>
-                                        <a class="dropdown-item" href="mens-category.html">• Nutrition for Men</a>
-                                        <a class="dropdown-item" href="women-category.html">• Nutrition for Women </a>
-                                        <a class="dropdown-item" href="#">•	Bestsellers</a>
-                                        <a class="dropdown-item" href="#">•	Combos</a>
+                                        <h4 class="mt-4">Shop By Category</h4>
+                                        <a class="dropdown-item" href="mens-category.html">•
+                                            Nutrition for Men</a>
+                                        <a class="dropdown-item" href="women-category.html">•
+                                            Nutrition for Women </a>
+                                        <a class="dropdown-item" href="#">• Bestsellers</a>
+                                        <a class="dropdown-item" href="#">• Combos</a>
                                     </div>
+                                </div>
                             </div>
-                        </div> 
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a
-                        class="nav-link dropdown-toggle"
-                        href="#"
-                        id="dropdownId"
-                        data-bs-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        >Discover</a
-                        >
-                        <div
-                        class="dropdown-menu"
-                        aria-labelledby="dropdownId"
-                        >
-                        <a class="dropdown-item" href="../discover-pages/our-story.html"
-                        >Our Story</a
-                        >
-                        <a class="dropdown-item" href="../discover-pages/why-us.html"
-                        >Why Us</a
-                        >
-                        <a class="dropdown-item" href="../discover-pages/certification.html"
-                        >Media/Certificates</a
-                        >
-                        <a class="dropdown-item" href="../discover-pages/contact.html"
-                        >Contact Us</a
-                        >
-                    </div>
-                </li>
-                <li class="nav-item">
-                        <a class="nav-link" href="#" aria-current="page"
-                        >Blog
-                        </a
-                        >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" aria-current="page"
-                      >Testimonials
-                      </a
-                      >
-                  </li>
-                </ul>
-                
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Discover</a>
+                            <div class="dropdown-menu" id="mega-menu2" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="../discover-pages/our-story.html">Our Story</a>
+                                <a class="dropdown-item" href="../discover-pages/why-us.html">Why Us</a>
+                                <a class="dropdown-item"
+                                    href="../discover-pages/certification.html">Media/Certificates</a>
+                                <a class="dropdown-item" href="../discover-pages/contact.html">Contact Us</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" aria-current="page">Blog
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" aria-current="page">Build a Box
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" aria-current="page">Offers
+                            </a>
+                        </li>
+                    </ul>
+                    <form class="d-flex align-items-center my-2 my-lg-0">
+                        <i id="user" class="bi bi-person"></i>
+                        <div class="search-box">
+                            <button type="button" class="btn-search"><i class="bi bi-search"></i></button>
+                            <input type="text" class="input-search" placeholder="Type to Search...">
+                          </div>
+                        <div class="cart-icon">
+                            <i class="bi bi-cart-dash"></i>
+                            <span class="counter">0</span>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <form class="d-flex align-items-center my-2 my-lg-0">
-                <i id="user" class="bi bi-person"></i>
-                <input
-                class="form-control me-sm-2"
-                type="text"
-                placeholder="Search"
-                />
-                <button
-                class="btn btn-outline-success my-sm-0"
-                type="submit"
-                >
-                <i class="bi bi-search"></i>
-            </button>
-            <i id="cart" class="bi bi-cart-dash"></i>
-        </form>
-    </div>
+        </div>
     </nav>
 <!-- navbar part -->
 
@@ -186,50 +173,58 @@
                     <div class="row">
                         <div class="col-12 col-sm-12 col-md-6 col-lg-4">
                             <div class="p-2">
-                                <div class="card">
-                                    <img class="card-img-top w-100" src="https://www.shrichyawanayurved.com/cdn/shop/files/SafedMusliforStemina_500x.webp?v=1700828467" alt="Title" />
-                                    <div class="card-body">
-                                    <h4 class="card-title">Safed Musli capsules</h4>
-                                    <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span></h5>
-                                    <button>Add To Cart</button>
+                                <a href="../product-details/Safed-Musli-Capsules.html">
+                                    <div class="card">
+                                        <img class="card-img-top w-100" src="https://www.shrichyawanayurved.com/cdn/shop/files/SafedMusliforStemina_500x.webp?v=1700828467" alt="Title" />
+                                        <div class="card-body">
+                                        <h4 class="card-title">Safed Musli capsules</h4>
+                                        <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span></h5>
+                                        <button><i class="bi bi-cart-dash"></i> Add To Cart</button>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                         <div class="col-12 col-sm-12 col-md-6 col-lg-4">
                             <div class="p-2">
-                                <div class="card">
-                                    <img class="card-img-top w-100" src="https://www.alpspurenutra.com/cdn/shop/products/MILKTHISTLE_B1.jpg?v=1655550613&width=600" alt="Title" />
-                                    <div class="card-body">
-                                    <h4 class="card-title">Milk thistle capsules</h4>
-                                    <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span></h5>
-                                    <button>Add To Cart</button>
+                                <a href="../product-details/Milk-Thistle-Capsules.html">
+                                    <div class="card">
+                                        <img class="card-img-top w-100" src="https://www.alpspurenutra.com/cdn/shop/products/MILKTHISTLE_B1.jpg?v=1655550613&width=600" alt="Title" />
+                                        <div class="card-body">
+                                        <h4 class="card-title">Milk thistle capsules</h4>
+                                        <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span></h5>
+                                        <button><i class="bi bi-cart-dash"></i> Add To Cart</button>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                         <div class="col-12 col-sm-12 col-md-6 col-lg-4">
                             <div class="p-2">
-                                <div class="card">
-                                    <img class="card-img-top w-100" src="../../assets/shilajit-product-3.png" alt="Title" />
-                                    <div class="card-body">
-                                    <h4 class="card-title">Moringa powder </h4>
-                                    <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span></h5>
-                                    <button>Add To Cart</button>
+                                <a href="../product-details/Moringa-Powder.html">
+                                    <div class="card">
+                                        <img class="card-img-top w-100" src="../../assets/shilajit-product-3.png" alt="Title" />
+                                        <div class="card-body">
+                                        <h4 class="card-title">Moringa powder </h4>
+                                        <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span></h5>
+                                        <button><i class="bi bi-cart-dash"></i> Add To Cart</button>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                         <div class="col-12 col-sm-12 col-md-6 col-lg-4">
                             <div class="p-2">
-                                <div class="card">
-                                    <img class="card-img-top w-100" src="https://dukaan.b-cdn.net/700x700/webp/upload_file_service/5e309722-314e-42ac-8198-8c7918496ea4/omega3-1.jpg" alt="Title" />
-                                    <div class="card-body">
-                                    <h4 class="card-title">Omega 3 fish oil </h4>
-                                    <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span></h5>
-                                    <button>Add To Cart</button>
+                                <a href="../product-details/Omega-3-Fish-Oil.html">
+                                    <div class="card">
+                                        <img class="card-img-top w-100" src="https://dukaan.b-cdn.net/700x700/webp/upload_file_service/5e309722-314e-42ac-8198-8c7918496ea4/omega3-1.jpg" alt="Title" />
+                                        <div class="card-body">
+                                        <h4 class="card-title">Omega 3 fish oil </h4>
+                                        <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span></h5>
+                                        <button><i class="bi bi-cart-dash"></i> Add To Cart</button>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -244,51 +239,62 @@
 <footer class="container-fluid text-white py-5" id="footer">
     <div class="container">
         <div class="row mx-md-5 hr">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-4">
-                <div class="accordion" id="accordionExample">
-                    <div class="accordion-item mb-5">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                          About Us
-                        </button>
-                      </h2>
-                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <a href="../discover-pages/our-story.html">Our Story</a>
-                            <a href="../discover-pages/contact.html">Contact Us</a>
-                            <a href="#">Our Blogs</a>
-                          </div>
-                      </div>
-                    </div>
-                  </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+                <h2>Soul Of Life</h2>
+                <h6>Introducing Soul Of Life – A one-stop destination for all your Ayurvedic needs! At Soul Of Life,
+                    we are catering to over 100+ medicines from Our authentic brands, right at your fingertips.</h6>
+                <div class="address d-flex">
+                    <i class="bi bi-house"></i>
+                    <p class="px-3">102/88-9, WAJIDPUR, JAJMAU, KANPUR NAGAR, UTTAR PRADESH, 208010</p>
+                </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-4">
-                <div class="quick-links">
-                    <h5>Quick Links</h5>
-                    <div class="links">
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+                <div class="about-us">
+                    <h5 class="text-center">Useful Links</h5>
+                    <div class="about-link">
+                        <a href="../discover-pages/our-story.html">Our Story</a>
+                        <a href="#">Our Blogs</a>
                         <a href="../discover-pages/contact.html">Contact Us</a>
                         <a href="../discover-pages/certification.html">Certificate</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+                <div class="quick-links">
+                    <h5>Policy</h5>
+                    <div class="links">
                         <a href="../../privacy-policy.html">Privacy Policy</a>
+                        <a href="../../order-&-shipping.html">Orders & Shipping</a>
                         <a href="../../terms-&-conditions.html">Term And Conditions</a>
                         <a href="../../return-&-refund.html">Refund & Cancellation</a>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-4">
-                <h2>Nourish your inbox</h2>
-                <h5>Your wellbeing check with specially curated tips, recipes and lifestyle support.</h5>
-                  <div class="social-links">
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-youtube"></i></a>
-                  </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+                <h5>Contact Us</h5>
+                <div class="contact d-flex">
+                    <i class="bi bi-telephone-fill"></i>
+                    <p class="ms-2">+91 7379431313</p>
+                </div>
+                <div class="mail d-flex">
+                    <i class="bi bi-envelope-fill"></i>
+                    <p class="ms-2">soupoflife2@gmail.com</p>
+                </div>
+                
+                </div>
             </div>
+
         </div>
     </div>
-    <div class="container">
+    <div class="container d-flex justify-content-between">
         <div class="row mx-md-5 mt-3">
             <h5>Copyright 2024 © Soul Of Life</h5>
+        </div>
+        <div class="social-links pe-5 mt-2 d-flex gap-3">
+            <a href="https://www.instagram.com/soupoflifeofficial/"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.facebook.com/soupoflifeofficial"><i class="bi bi-facebook"></i></a>
         </div>
     </div>
 </footer>

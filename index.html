@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soup Of Life</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="jquery/owl-carousel/owl.carousel.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script></head>
-<body>
-    
-<!-- marquee part -->
-    <div class="marquee bg-dark text-white d-flex align-items-center">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="showcart">
+
+    <!-- marquee part -->
+    <!-- <div class="marquee bg-dark text-white d-flex align-items-center">
         <marquee behavior="alternate" direction="left">
             <ul class="d-flex m-0 py-2">
             <li>Pure on Himalayan Shilajit</li>
@@ -29,259 +35,161 @@
             <li>BUY 1 GET 1 FREE on pure himalayan shilajit</li>
         </ul>
         </marquee>
-    </div>
-<!-- marquee part -->
+    </div> -->
+    <!-- marquee part -->
 
-<!-- navbar part -->
-    <nav
-    class="navbar navbar-expand-sm navbar-light px-5 py-0"
-    >
-    <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="assets/logo.png" alt=""></a>
-        <button
-        class="navbar-toggler d-lg-none"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapsibleNavId"
-        aria-controls="collapsibleNavId"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-        >
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-center ms-md-5" id="collapsibleNavId">
-        <ul class="navbar-nav mt-2 mt-lg-0 gap-3">
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/product-pages/all-products.html" aria-current="page"
-                        >View All Products
-                        </a
-                        >
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a
-                        class="nav-link dropdown-toggle"
-                        href="#"
-                        id="dropdownId"
-                        data-bs-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        >Shop</a
-                        >
-                        <div class="dropdown-menu" id="mega-menu" aria-labelledby="dropdownId">
-                            <div class="shop-all">
-                                <div class="just-in">
-                                    <h4>SHOP ALL</h4>
-                                    <h4 class="mt-4">Just In</h4>
-                                    <a class="dropdown-item" href="#">•	Pure Himalayan Shilajit</a>
-                                    <a class="dropdown-item" href="#">•	Wellness Tea</a>
+    <!-- navbar part -->
+
+    <nav class="navbar navbar-expand-lg fixed-top px-md-5">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://soupoflife.in"><img src="assets/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/product-pages/all-products.html" aria-current="page">View
+                                All Products
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Shop</a>
+                            <div class="dropdown-menu" id="mega-menu" aria-labelledby="dropdownId">
+                                <div class="shop-all">
+                                    <div class="just-in">
+                                        <h4>SHOP ALL</h4>
+                                        <h4 class="mt-4">Just In</h4>
+                                        <a class="dropdown-item" href="#">• Pure Himalayan Shilajit</a>
+                                        <a class="dropdown-item" href="#">• Wellness Tea</a>
                                     </div>
                                     <div class="shop-by-category">
-                                        <h3 class="mt-4">Shop By Category</h3>
-                                        <a class="dropdown-item" href="pages/product-pages/mens-category.html">• Nutrition for Men</a>
-                                        <a class="dropdown-item" href="pages/product-pages/women-category.html">• Nutrition for Women </a>
-                                        <a class="dropdown-item" href="#">•	Bestsellers</a>
-                                        <a class="dropdown-item" href="#">•	Combos</a>
+                                        <h4 class="mt-4">Shop By Category</h4>
+                                        <a class="dropdown-item" href="pages/product-pages/mens-category.html">•
+                                            Nutrition for Men</a>
+                                        <a class="dropdown-item" href="pages/product-pages/women-category.html">•
+                                            Nutrition for Women </a>
+                                        <a class="dropdown-item" href="#">• Bestsellers</a>
+                                        <a class="dropdown-item" href="#">• Combos</a>
                                     </div>
+                                </div>
                             </div>
-                        </div> 
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a
-                        class="nav-link dropdown-toggle"
-                        href="#"
-                        id="dropdownId"
-                        data-bs-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        >Discover</a
-                        >
-                        <div
-                        class="dropdown-menu"
-                        aria-labelledby="dropdownId"
-                        >
-                        <a class="dropdown-item" href="pages/discover-pages/our-story.html"
-                        >Our Story</a
-                        >
-                        <a class="dropdown-item" href="pages/discover-pages/why-us.html"
-                        >Why Us</a
-                        >
-                        <a class="dropdown-item" href="pages/discover-pages/certification.html"
-                        >Media/Certificates</a
-                        >
-                        <a class="dropdown-item" href="pages/discover-pages/contact.html"
-                        >Contact Us</a
-                        >
-                    </div>
-                </li>
-                <li class="nav-item">
-                        <a class="nav-link" href="#" aria-current="page"
-                        >Blog
-                        </a
-                        >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" aria-current="page"
-                      >Testimonials
-                      </a
-                      >
-                  </li>
-                </ul>
-                
-            </div>
-            <form class="d-flex align-items-center my-2 my-lg-0">
-                <i id="user" class="bi bi-person"></i>
-                <input
-                class="form-control me-sm-2"
-                type="text"
-                placeholder="Search"
-                />
-                <button
-                class="btn btn-outline-success my-sm-0"
-                type="submit"
-                >
-                <i class="bi bi-search"></i>
-            </button>
-            <i id="cart" class="bi bi-cart-dash"></i>
-        </form>
-    </div>
-    </nav>
-<!-- navbar part -->
-
-<!-- carousel part -->
-    <div id="carouselslider" class="carousel slide carousel-fade" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="assets/banner2.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/Banner1.png" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/banner3.png" class="d-block w-100" alt="...">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselslider" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselslider" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-    </div>
-<!-- carousel part -->
-
-<!-- product part -->
-    <section id="product" class="py-5">
-        <div class="container">
-          <h1 class="text-center mb-4">Our Top Products</h1>
-            <div id="product-slider" class="carousel slide">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="row mx-md-5">
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                            <div class="cards text-center">
-                                <img class="w-100" src="https://wellbeingnutrition.com/cdn/shop/files/melts.png?v=1692594287" alt="">
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Discover</a>
+                            <div class="dropdown-menu" id="mega-menu2" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="pages/discover-pages/our-story.html">Our Story</a>
+                                <a class="dropdown-item" href="pages/discover-pages/why-us.html">Why Us</a>
+                                <a class="dropdown-item"
+                                    href="pages/discover-pages/certification.html">Media/Certificates</a>
+                                <a class="dropdown-item" href="pages/discover-pages/contact.html">Contact Us</a>
                             </div>
-                            <h4 class="text-center mt-2">Melts</h4>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" aria-current="page">Blog
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" aria-current="page">Build a Box
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" aria-current="page">Offers
+                            </a>
+                        </li>
+                    </ul>
+                    <form class="d-flex align-items-center my-2 my-lg-0">
+                        <i id="user" class="bi bi-person"></i>
+                        <div class="search-box">
+                            <button type="button" class="btn-search"><i class="bi bi-search"></i></button>
+                            <input type="text" class="input-search" placeholder="Type to Search...">
+                          </div>
+                        <div class="cart-icon">
+                            <i class="bi bi-cart-dash"></i>
+                            <span class="counter">0</span>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                            <div class="cards text-center">
-                                <img class="w-100" src="https://wellbeingnutrition.com/cdn/shop/files/melts.png?v=1692594287" alt="">
-                            </div>
-                            <h4 class="text-center mt-2">Melts</h4>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                            <div class="cards text-center">
-                                <img class="w-100" src="https://wellbeingnutrition.com/cdn/shop/files/melts.png?v=1692594287" alt="">
-                            </div>
-                            <h4 class="text-center mt-2">Melts</h4>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                            <div class="cards text-center">
-                                <img class="w-100" src="https://wellbeingnutrition.com/cdn/shop/files/melts.png?v=1692594287" alt="">
-                            </div>
-                            <h4 class="text-center mt-2">Melts</h4>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="row mx-md-5">
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                            <div class="cards text-center">
-                                <img class="w-100" src="https://wellbeingnutrition.com/cdn/shop/files/Shilajit_e676b5d2-b560-46df-a41c-9e7bfdd1ab1a.png?v=1703658857" alt="">
-                            </div>
-                            <h4 class="text-center mt-2">Melts</h4>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                            <div class="cards text-center">
-                                <img class="w-100" src="https://wellbeingnutrition.com/cdn/shop/files/Shilajit_e676b5d2-b560-46df-a41c-9e7bfdd1ab1a.png?v=1703658857" alt="">
-                            </div>
-                            <h4 class="text-center mt-2">Melts</h4>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                            <div class="cards text-center">
-                                <img class="w-100" src="https://wellbeingnutrition.com/cdn/shop/files/Shilajit_e676b5d2-b560-46df-a41c-9e7bfdd1ab1a.png?v=1703658857" alt="">
-                            </div>
-                            <h4 class="text-center mt-2">Melts</h4>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                            <div class="cards text-center">
-                                <img class="w-100" src="https://wellbeingnutrition.com/cdn/shop/files/Shilajit_e676b5d2-b560-46df-a41c-9e7bfdd1ab1a.png?v=1703658857" alt="">
-                            </div>
-                            <h4 class="text-center mt-2">Melts</h4>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="row mx-md-5">
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                            <div class="cards text-center">
-                                <img class="w-100" src="https://wellbeingnutrition.com/cdn/shop/files/Kids_melts_6187bc33-0794-49ff-87aa-550b4c19e863.png?v=1698932974" alt="">
-                            </div>
-                            <h4 class="text-center mt-2">Melts</h4>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                            <div class="cards text-center">
-                                <img class="w-100" src="https://wellbeingnutrition.com/cdn/shop/files/Kids_melts_6187bc33-0794-49ff-87aa-550b4c19e863.png?v=1698932974" alt="">
-                            </div>
-                            <h4 class="text-center mt-2">Melts</h4>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                            <div class="cards text-center">
-                                <img class="w-100" src="https://wellbeingnutrition.com/cdn/shop/files/Kids_melts_6187bc33-0794-49ff-87aa-550b4c19e863.png?v=1698932974" alt="">
-                            </div>
-                            <h4 class="text-center mt-2">Melts</h4>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                            <div class="cards text-center">
-                                <img class="w-100" src="https://wellbeingnutrition.com/cdn/shop/files/Kids_melts_6187bc33-0794-49ff-87aa-550b4c19e863.png?v=1698932974" alt="">
-                            </div>
-                            <h4 class="text-center mt-2">Melts</h4>
-                        </div>
-                    </div>
-                  </div>
+                    </form>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#product-slider" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#product-slider" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
+            </div>
         </div>
-    </section>
-<!-- product part -->
+    </nav>
 
-<!-- page-info -->
+    <!-- navbar part -->
+
+    <!-- cart menu -->
+
+    <div class="cart-menu">
+        <h3 class="text-center my-3">Shopping Cart</h3>
+        <div class="products-list">
+            <div class="product-item ">
+                <div class="product-image">
+                    <img src="assets/shilajit-product-1.png" alt="">
+                </div>
+                <div class="product-name">
+                    Name
+                </div>
+                <div class="price">
+                    900 rs
+                </div>
+                <div class="quantity">
+                    <span class="minus"> < </span>
+                    <span>1</span>
+                    <span class="plus">></span>
+                </div>
+            </div>
+            
+
+        </div>
+        <div class="cart-btn">
+            <button class="close">Close</button>
+            <button class="checkout">Checkout</button>
+        </div>
+    </div>
+
+    <!-- cart menu -->
+
+
+    <!-- carousel part -->
+    <div id="carouselslider" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/banner2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/Banner1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/banner3.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselslider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselslider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- carousel part -->
+
+
+
+    <!-- page-info -->
     <div class="about-page mt-5 pb-5">
         <div class="container ">
             <div class="row ">
                 <div class="col-md-8 mx-auto text-center">
-                    <h2>Our powerful <span style="font-family: dancing-script;">whole-food</span> 
-                        ingredients and <br> <span style="font-family: dancing-script;">full spectrum</span> 
+                    <h2>Our powerful <span style="font-family: dancing-script;color:#263f2f">whole-food</span>
+                        ingredients and <br> <span style="font-family: dancing-script;color:#263f2f">full spectrum</span>
                         herbal blends work synergistically <br> to enhance your daily wellbeing</h2>
                 </div>
             </div>
@@ -294,7 +202,8 @@
                 </div>
                 <div class="col-6 col-md-2">
                     <div class="data text-center">
-                        <img src="https://icons.iconarchive.com/icons/roundicons/100-free-solid/256/science-icon.png" alt="">
+                        <img src="https://icons.iconarchive.com/icons/roundicons/100-free-solid/256/science-icon.png"
+                            alt="">
                         <h6 class="mt-3">Scientifically-Backed Formulations</h6>
                     </div>
                 </div>
@@ -325,209 +234,256 @@
             </div>
         </div>
     </div>
-<!-- page-info -->
+    <!-- page-info -->
 
-<!-- multi product page -->
-    <section class="container py-5" id="mul-product"> 
+    <!-- multi product page -->
+    <section class="container py-5" id="mul-product">
         <div class="mul-product">
-        <h1 class="text-center fw-bold">Created to meet your needs</h1>
-        <h5 class="text-center ">From naturally boosting your immunity, achieving better sleep to gaining <br> mental clarity, we've got you.</h5>
-        <!-- Filtter Button -->
-<div class="container-btn">
-  <div class="searchbar">
-    <div class="search">
-      <input type="text" id="searchinput" onkeyup="searchFunction()"  placeholder="Search">
-    </div>
-  </div>
-  <div class="vl"></div>
-    <div class="buttons">
-      <div class="btn-group">
-        <button class="button active" onclick="filterSelection('all')">All Products</button>
-        <button class="button" onclick="filterSelection('bestseller')">Bestsellers</button>
-        <button class="button" onclick="filterSelection('men')">Nutrition for Men</button>
-        <button class="button" onclick="filterSelection('women')">Nutrition for Women </button>
-      </div>
-    </div>
-  </div>
-      
-  
-  <!-- Content Card -->
-  <div class="owl-carousel">
-    <div class="p-2"> 
-        <div class="card">
-            <img class="card-img-top w-100" src="assets/shilajit-product-1.png" alt="Title" />
-            <div class="card-body">
-            <h4 class="card-title">Shilajit resin</h4>
-            <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span></h5>
-            <button>Add To Cart</button>
+            <h1 class="text-center fw-bold">Created to meet your needs</h1>
+            <h5 class="text-center ">From naturally boosting your immunity, achieving better sleep to gaining <br>
+                mental clarity, we've got you.</h5>
+            <!-- Filtter Button -->
+            <div class="container-btn">
+                <div class="buttons">
+                    <div class="btn-group">
+                        <button class="button active" onclick="filterSelection('       ')">All Products</button>
+                        <button class="button" onclick="filterSelection('bestseller')">Bestsellers</button>
+                        <button class="button" onclick="filterSelection('men')">Nutrition for Men</button>
+                        <button class="button" onclick="filterSelection('women')">Nutrition for Women </button>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="p-2">
-        <div class="card">
-            <img class="card-img-top w-100" src="assets/shilajit product-2.png" alt="Title" />
-            <div class="card-body">
-            <h4 class="card-title">Shilajit gold resin</h4>
-            <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span></h5>
-            <button>Add To Cart</button>
+            <div class="owl-carousel">
+                <div class="p-2">
+                    <a href="pages/product-details/Milk-Thistle-Capsules.html">
+                        <div class="card">
+                            <img class="card-img-top w-100" src="assets/milk-thruster.png" alt="Title" />
+                            <div class="card-body">
+                                <h4 class="card-title">Milk thistle capsules</h4>
+                                <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span>
+                                </h5>
+                                <button><i class="bi bi-cart-dash"></i> Add To Cart</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="p-2">
+                    <a href="pages/product-details/Ashwagandha-Capsules.html">
+                        <div class="card">
+                            <img class="card-img-top w-100" src="assets/aswgandha.png" alt="Title" />
+                            <div class="card-body">
+                                <h4 class="card-title">Ashwagandha capsules</h4>
+                                <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span>
+                                </h5>
+                                <button><i class="bi bi-cart-dash"></i> Add To Cart</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="p-2">
+                    <a href="pages/product-details/Omega-3-Fish-Oil.html">
+                        <div class="card">
+                            <img class="card-img-top w-100" src="assets/Omgea-3.png" alt="Title" />
+                            <div class="card-body">
+                                <h4 class="card-title">Omega 3 fish oil </h4>
+                                <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span>
+                                </h5>
+                                <button><i class="bi bi-cart-dash"></i> Add To Cart</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="p-2">
+                    <a href="pages/product-details/Shilajit resin.html">
+                        <div class="card">
+                            <img class="card-img-top w-100" src="assets/shilajit-product-1.png" alt="Title" />
+                            <div class="card-body">
+                                <h4 class="card-title">Shilajit resin</h4>
+                                <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span>
+                                </h5>
+                                <button> <i class="bi bi-cart-dash"></i> Add To Cart</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="p-2">
+                    <a href="pages/product-details/Shilajit-gold-Resin.html">
+                        <div class="card">
+                            <img class="card-img-top w-100" src="assets/shilajit product-2.png" alt="Title" />
+                            <div class="card-body">
+                                <h4 class="card-title">Shilajit gold resin</h4>
+                                <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span>
+                                </h5>
+                                <button><i class="bi bi-cart-dash"></i> Add To Cart</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="p-2">
+                    <a href="pages/product-details/Shilajit-Gold-Capsules.html">
+                        <div class="card">
+                            <img class="card-img-top w-100"
+                                src="https://drvaidyas.com/cdn/shop/products/Shilajit-Gold-Capsules_2a72fa32-b55b-4494-8af5-1648c533e996.png?v=1676966515"
+                                alt="Title" />
+                            <div class="card-body">
+                                <h4 class="card-title">Shilajit gold capsules</h4>
+                                <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span>
+                                </h5>
+                                <button><i class="bi bi-cart-dash"></i> Add To Cart</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="p-2">
+                    <a href="pages/product-details/Safed-Musli-Capsules.html">
+                        <div class="card">
+                            <img class="card-img-top w-100"
+                                src="https://www.shrichyawanayurved.com/cdn/shop/files/SafedMusliforStemina_500x.webp?v=1700828467"
+                                alt="Title" />
+                            <div class="card-body">
+                                <h4 class="card-title">Safed Musli capsules</h4>
+                                <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span>
+                                </h5>
+                                <button><i class="bi bi-cart-dash"></i> Add To Cart</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="p-2">
+                    <a href="pages/product-details/Moringa-Powder.html">
+                        <div class="card">
+                            <img class="card-img-top w-100" src="assets/shilajit-product-3.png" alt="Title" />
+                            <div class="card-body">
+                                <h4 class="card-title">Moringa Powder </h4>
+                                <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span>
+                                </h5>
+                                <button><i class="bi bi-cart-dash"></i> Add To Cart</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+               
+                <div class="p-2">
+                    <a href="pages/product-details/Aloe-Vera-Gel.html">
+                        <div class="card">
+                            <img class="card-img-top w-100" src="assets/shilajit-product-3.png" alt="Title" />
+                            <div class="card-body">
+                                <h4 class="card-title">Aloe Vera Gel</h4>
+                                <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span>
+                                </h5>
+                                <button><i class="bi bi-cart-dash"></i> Add To Cart</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="p-2">
+                    <a href="pages/product-details/Multivitamins-Capsules.html">
+                        <div class="card">
+                            <img class="card-img-top w-100" src="assets/shilajit-product-3.png" alt="Title" />
+                            <div class="card-body">
+                                <h4 class="card-title">Multivitamins capsules</h4>
+                                <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span>
+                                </h5>
+                                <button><i class="bi bi-cart-dash"></i> Add To Cart</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="p-2">
+                    <a href="pages/product-details/Biotin-Gummies.html">
+                        <div class="card">
+                            <img class="card-img-top w-100" src="assets/shilajit-product-3.png" alt="Title" />
+                            <div class="card-body">
+                                <h4 class="card-title">Biotin gummies</h4>
+                                <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span>
+                                </h5>
+                                <button><i class="bi bi-cart-dash"></i> Add To Cart</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="p-2">
+                    <a href="pages/product-details/Hair-Skin-And-Nail-Gummies.html">
+                        <div class="card">
+                            <img class="card-img-top w-100" src="assets/shilajit-product-3.png" alt="Title" />
+                            <div class="card-body">
+                                <h4 class="card-title">Hair skin and nail gummies</h4>
+                                <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span>
+                                </h5>
+                                <button><i class="bi bi-cart-dash"></i> Add To Cart</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="p-2">
+                    <a href="pages/product-details/Multi-Collagen-Gummies.html">
+                        <div class="card">
+                            <img class="card-img-top w-100" src="assets/shilajit-product-3.png" alt="Title" />
+                            <div class="card-body">
+                                <h4 class="card-title">Multi collagen gummies</h4>
+                                <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span>
+                                </h5>
+                                <button><i class="bi bi-cart-dash"></i> Add To Cart</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="p-2">
+                    <a href="pages/product-details/Kumkumadi-Cream.html">
+                        <div class="card">
+                            <img class="card-img-top w-100" src="assets/shilajit-product-3.png" alt="Title" />
+                            <div class="card-body">
+                                <h4 class="card-title">Kumkumadi cream</h4>
+                                <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span>
+                                </h5>
+                                <button><i class="bi bi-cart-dash"></i> Add To Cart</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="p-2">
+                    <a href="pages/product-details/Kumkumadi-Tailam.html">
+                        <div class="card">
+                            <img class="card-img-top w-100" src="assets/shilajit-product-3.png" alt="Title" />
+                            <div class="card-body">
+                                <h4 class="card-title">Kumkumadi tailam</h4>
+                                <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span>
+                                </h5>
+                                <button><i class="bi bi-cart-dash"></i> Add To Cart</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="p-2">
+                    <a href="">
+                        <div class="card">
+                            <img class="card-img-top w-100" src="assets/shilajit-product-3.png" alt="Title" />
+                            <div class="card-body">
+                                <h4 class="card-title">Stress relief roll on </h4>
+                                <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span>
+                                </h5>
+                                <button><i class="bi bi-cart-dash"></i> Add To Cart</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="p-2">
-        <div class="card">
-            <img class="card-img-top w-100" src="https://drvaidyas.com/cdn/shop/products/Shilajit-Gold-Capsules_2a72fa32-b55b-4494-8af5-1648c533e996.png?v=1676966515" alt="Title" />
-            <div class="card-body">
-            <h4 class="card-title">Shilajit gold capsules</h4>
-            <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span></h5>
-            <button>Add To Cart</button>
-            </div>
-        </div>
-    </div>
-    <div class="p-2">
-        <div class="card">
-            <img class="card-img-top w-100" src="https://narayanindia.com/wp-content/uploads/2024/02/28.png" alt="Title" />
-            <div class="card-body">
-            <h4 class="card-title">Ashwagandha capsules</h4>
-            <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span></h5>
-            <button>Add To Cart</button>
-            </div>
-        </div>
-    </div>
-    <div class="p-2">
-        <div class="card">
-            <img class="card-img-top w-100" src="https://www.shrichyawanayurved.com/cdn/shop/files/SafedMusliforStemina_500x.webp?v=1700828467" alt="Title" />
-            <div class="card-body">
-            <h4 class="card-title">Safed Musli capsules</h4>
-            <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span></h5>
-            <button>Add To Cart</button>
-            </div>
-        </div>
-    </div>
-    <div class="p-2">
-        <div class="card">
-            <img class="card-img-top w-100" src="https://www.alpspurenutra.com/cdn/shop/products/MILKTHISTLE_B1.jpg?v=1655550613&width=600" alt="Title" />
-            <div class="card-body">
-            <h4 class="card-title">Milk thistle capsules</h4>
-            <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span></h5>
-            <button>Add To Cart</button>
-            </div>
-        </div>
-    </div>
-    <div class="p-2">
-      <div class="card">
-          <img class="card-img-top w-100" src="assets/shilajit-product-3.png" alt="Title" />
-          <div class="card-body">
-          <h4 class="card-title">Moringa powder </h4>
-          <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span></h5>
-          <button>Add To Cart</button>
-          </div>
-      </div>
-  </div>
-  <div class="p-2">
-    <div class="card">
-        <img class="card-img-top w-100" src="https://dukaan.b-cdn.net/700x700/webp/upload_file_service/5e309722-314e-42ac-8198-8c7918496ea4/omega3-1.jpg" alt="Title" />
-        <div class="card-body">
-        <h4 class="card-title">Omega 3 fish oil </h4>
-        <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span></h5>
-        <button>Add To Cart</button>
-        </div>
-    </div>
-</div>
-<div class="p-2">
-  <div class="card">
-      <img class="card-img-top w-100" src="assets/shilajit-product-3.png" alt="Title" />
-      <div class="card-body">
-      <h4 class="card-title">Aloe vera gel</h4>
-      <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span></h5>
-      <button>Add To Cart</button>
-      </div>
-  </div>
-</div>
-<div class="p-2">
-  <div class="card">
-      <img class="card-img-top w-100" src="assets/shilajit-product-3.png" alt="Title" />
-      <div class="card-body">
-      <h4 class="card-title">Multivitamins capsules</h4>
-      <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span></h5>
-      <button>Add To Cart</button>
-      </div>
-  </div>
-</div>
-<div class="p-2">
-  <div class="card">
-      <img class="card-img-top w-100" src="assets/shilajit-product-3.png" alt="Title" />
-      <div class="card-body">
-      <h4 class="card-title">Biotin gummies</h4>
-      <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span></h5>
-      <button>Add To Cart</button>
-      </div>
-  </div>
-</div>
-<div class="p-2">
-  <div class="card">
-      <img class="card-img-top w-100" src="assets/shilajit-product-3.png" alt="Title" />
-      <div class="card-body">
-      <h4 class="card-title">Hair skin and nail gummies</h4>
-      <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span></h5>
-      <button>Add To Cart</button>
-      </div>
-  </div>
-</div>
-<div class="p-2">
-  <div class="card">
-      <img class="card-img-top w-100" src="assets/shilajit-product-3.png" alt="Title" />
-      <div class="card-body">
-      <h4 class="card-title">Multi collagen gummies</h4>
-      <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span></h5>
-      <button>Add To Cart</button>
-      </div>
-  </div>
-</div>
-<div class="p-2">
-  <div class="card">
-      <img class="card-img-top w-100" src="assets/shilajit-product-3.png" alt="Title" />
-      <div class="card-body">
-      <h4 class="card-title">Kumkumadi cream</h4>
-      <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span></h5>
-      <button>Add To Cart</button>
-      </div>
-  </div>
-</div>
-<div class="p-2">
-  <div class="card">
-      <img class="card-img-top w-100" src="assets/shilajit-product-3.png" alt="Title" />
-      <div class="card-body">
-      <h4 class="card-title">Kumkumadi tailam</h4>
-      <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span></h5>
-      <button>Add To Cart</button>
-      </div>
-  </div>
-</div>
-<div class="p-2">
-  <div class="card">
-      <img class="card-img-top w-100" src="assets/shilajit-product-3.png" alt="Title" />
-      <div class="card-body">
-      <h4 class="card-title">Stress relief roll on </h4>
-      <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span></h5>
-      <button>Add To Cart</button>
-      </div>
-  </div>
-</div>
-  </div>
-  
+
         </div>
     </section>
-<!-- multi product page -->
+    <!-- multi product page -->
 
-<!-- supplement part -->
+    <!-- supplement part -->
     <section class="container" id="supplement">
         <div class="row">
             <div class="col-11 mx-auto">
                 <div class="supplement d-flex align-items-center">
                     <div class="content">
                         <h1>Future of clean <br> supplements</h1>
-                        <p>From developing advanced nano science to cultivating 6 
-                            unique active probiotic strands, our team studies diets, 
+                        <p>From developing advanced nano science to cultivating 6
+                            unique active probiotic strands, our team studies diets,
                             genetics and technology to create evidence-based products
                             that actually work.</p>
                     </div>
@@ -535,20 +491,20 @@
             </div>
         </div>
     </section>
-<!-- supplement part -->
+    <!-- supplement part -->
 
-<!-- nutrition part -->
+    <!-- nutrition part -->
     <section id="nutrition">
         <div class="container py-5">
             <div class="row mx-md-5">
                 <div class="col-12 col-sm-12 col-md-6">
-                    <img class="rounded w-100" src="https://wellbeingnutrition.com/cdn/shop/files/nutrition-with-right-intents_720x_2f3d76d4-592a-4e01-869c-bde091a1a4d5.jpg?v=1643722264" alt="">
+                    <img class="rounded w-100" src="assets/WEBSITE-BANNER-A.jpg" alt="">
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 d-flex justify-content-center align-items-center">
                     <div class="nut-data mt-3">
                         <h1>Future of clean <br> supplements</h1>
-                        <p>From developing advanced nano science to cultivating 6 
-                            unique active probiotic strands, our team studies diets, 
+                        <p>From developing advanced nano science to cultivating 6
+                            unique active probiotic strands, our team studies diets,
                             genetics and technology to create evidence-based products
                             that actually work.</p>
                     </div>
@@ -556,354 +512,224 @@
             </div>
         </div>
     </section>
-<!-- nutrition part -->
+    <!-- nutrition part -->
 
-<!-- featured product -->
+    <!-- featured product -->
     <section class="container-fluid my-5 pt-3" id="featured">
         <div class="container">
             <h1 class="text-center fs-1 fw-bold">Featured Product</h1>
             <div class="row">
                 <div class="owl-carousel">
-                    <div> 
+                    <div>
                         <div class="card">
-                            <img class="card-img-top w-100" src="assets/shilajit-product-1.png" alt="Title" />
+                            <a href="pages/product-details/Milk-Thistle-Capsules.html"><img class="card-img-top w-100" src="assets/milk-thruster.png" alt="Title" /></a>
                             <div class="card-body">
-                            <h4 class="card-title">Apple Cider Viniger With Garnicia Cambogia and Pomegranate</h4>
-                            <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span></h5>
-                            <button>Add To Cart</button>
+                                <h4 class="card-title">Milk thistle capsules</h4>
+                                <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span>
+                                </h5>
+                                <button><i class="bi bi-cart-dash"></i> Add To Cart</button>
                             </div>
                         </div>
                     </div>
                     <div>
                         <div class="card">
-                            <img class="card-img-top w-100" src="assets/shilajit-product-3.png" alt="Title" />
+                            <a href="pages/product-details/Ashwagandha-Capsules.html"><img class="card-img-top w-100" src="assets/aswgandha.png" alt="Title" /></a>
                             <div class="card-body">
-                            <h4 class="card-title">Apple Cider Viniger With Garnicia Cambogia and Pomegranate</h4>
-                            <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span></h5>
-                            <button>Add To Cart</button>
+                                <h4 class="card-title">Ashwagandha capsules</h4>
+                                <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span>
+                                </h5>
+                                <button><i class="bi bi-cart-dash"></i> Add To Cart</button>
                             </div>
                         </div>
                     </div>
                     <div>
                         <div class="card">
-                            <img class="card-img-top w-100" src="assets/shilajit product-2.png" alt="Title" />
+                            <a href="pages/product-details/Omega-3-Fish-Oil.html"><img class="card-img-top w-100" src="assets/Omgea-3.png" alt="Title" /></a>
                             <div class="card-body">
-                            <h4 class="card-title">Apple Cider Viniger With Garnicia Cambogia and Pomegranate</h4>
-                            <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span></h5>
-                            <button>Add To Cart</button>
+                                <h4 class="card-title">Omega 3 fish oil </h4>
+                                <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span>
+                                </h5>
+                                <button><i class="bi bi-cart-dash"></i> Add To Cart</button>
                             </div>
                         </div>
                     </div>
                     <div>
                         <div class="card">
-                            <img class="card-img-top w-100" src="assets/shilajit-product-1.png" alt="Title" />
+                            <a href="pages/product-details/Shilajit resin.html"><img class="card-img-top w-100" src="assets/shilajit-product-1.png" alt="Title" /></a>
                             <div class="card-body">
-                            <h4 class="card-title">Apple Cider Viniger With Garnicia Cambogia and Pomegranate</h4>
-                            <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span></h5>
-                            <button>Add To Cart</button>
+                                <h4 class="card-title">Shilajit resin</h4>
+                                <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span>
+                                </h5>
+                                <button> <i class="bi bi-cart-dash"></i> Add To Cart</button>
                             </div>
                         </div>
                     </div>
                     <div>
                         <div class="card">
-                            <img class="card-img-top w-100" src="assets/shilajit product-2.png" alt="Title" />
+                            <a href="pages/product-details/Shilajit-gold-Resin.html"><img class="card-img-top w-100" src="assets/shilajit product-2.png" alt="Title" /></a>
                             <div class="card-body">
-                            <h4 class="card-title">Apple Cider Viniger With Garnicia Cambogia and Pomegranate</h4>
-                            <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span></h5>
-                            <button>Add To Cart</button>
+                                <h4 class="card-title">Shilajit gold resin</h4>
+                                <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span>
+                                </h5>
+                                <button><i class="bi bi-cart-dash"></i> Add To Cart</button>
                             </div>
                         </div>
                     </div>
                     <div>
                         <div class="card">
-                            <img class="card-img-top w-100" src="assets/shilajit-product-3.png" alt="Title" />
+                            <a href="pages/product-details/Shilajit-Gold-Capsules.html"><img class="card-img-top w-100"
+                                src="https://drvaidyas.com/cdn/shop/products/Shilajit-Gold-Capsules_2a72fa32-b55b-4494-8af5-1648c533e996.png?v=1676966515"
+                                alt="Title" /></a>
                             <div class="card-body">
-                            <h4 class="card-title">Apple Cider Viniger With Garnicia Cambogia and Pomegranate</h4>
-                            <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span></h5>
-                            <button>Add To Cart</button>
+                                <h4 class="card-title">Shilajit gold capsules</h4>
+                                <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span>
+                                </h5>
+                                <button><i class="bi bi-cart-dash"></i> Add To Cart</button>
                             </div>
                         </div>
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
     </section>
-<!-- featured product -->
+    <!-- featured product -->
 
-<!-- review part -->
-    <section class="container py-5" id="review-part"> 
-      <h1 class="text-center fw-bold">Disbelievers believe</h1>
-      <p class="text-center fs-4">Discover why so many people trust us with their daily wellbeing.</p>
-      <div class="wrapper">
-          <div class="rows row-features">
-            <div class="block-wrap h50 mob-auto">
-              <div class="block">
-                <div class="new-feature-slider">
-                  <div id="slider-1" class="feature-slide active">
-                    <div class="block-wrap w50 new-feature-image-wrap mob-auto">
-                      <div class="block">
-                        <div class="feature-slide-image">
-                          <div class="" style="background-image:url('http://www.williamsjettenders.com/wp-content/uploads/2015/10/features41.jpg');">
-                            <img src="http://www.williamsjettenders.com/wp-content/uploads/2015/10/features41.jpg">
-                          </div>
+    <!-- review part -->
+
+    <section id="testim" class="testim">
+        <!--         <div class="testim-cover"> -->
+                    <div class="wrap">
+                        <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+                        <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
+                        <ul id="testim-dots" class="dots">
+                            <li class="dot active"></li><!--
+                            --><li class="dot"></li><!--
+                            --><li class="dot"></li><!--
+                            --><li class="dot"></li><!--
+                            --><li class="dot"></li>
+                        </ul>
+                        <div id="testim-content" class="cont">
+                            
+                            <div class="active">
+                                <div class="img"><img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
+                                <h2>Lorem P. Ipsum</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                            </div>
+        
+                            <div>
+                                <div class="img"><img src="https://images.pexels.com/photos/2169434/pexels-photo-2169434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
+                                <h2>Mr. Lorem Ipsum</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                            </div>
+        
+                            <div>
+                                <div class="img"><img src="https://images.pexels.com/photos/2117283/pexels-photo-2117283.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
+                                <h2>Lorem Ipsum</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                            </div>
+        
+                            <div>
+                                <div class="img"><img src="https://images.pexels.com/photos/732425/pexels-photo-732425.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
+                                <h2>Lorem De Ipsum</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                            </div>
+        
+                            <div>
+                                <div class="img"><img src="https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
+                                <h2>Ms. Lorem R. Ipsum</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                            </div>
+        
                         </div>
-                      </div>
                     </div>
-                    <div class="block-wrap w50 center-content mob-auto">
-                      <div class="block">
-                        <div class="content-centered overview-text">
-                          <h2 class="fakeh1">Cleaner, more powerful engine</h2>
-                          <span class="divider-wave blue-wave"></span>
-                          <p></p>
-                          <p>Get improved power, torque and fuel efficiency with the next-generation Textron 850MPE engine. It performs better and is also cleaner, thanks to a catalytic converter, making it one of the cleanest marine engines in the world. Available
-                            in a choice of power outputs, there’s also a power reduction switch for jet tender newcomers who want to take it easy at first.</p>
-                          <p></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="slider-2" class="feature-slide">
-                    <div class="block-wrap w50 new-feature-image-wrap mob-auto">
-                      <div class="block">
-                        <div class="feature-slide-image">
-                          <div class="" style="background-image:url('http://www.williamsjettenders.com/wp-content/uploads/2015/08/325-image3.jpg');">
-                            <img src="http://www.williamsjettenders.com/wp-content/uploads/2015/08/325-image3.jpg">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="block-wrap w50 center-content mob-auto">
-                      <div class="block">
-                        <div class="content-centered overview-text">
-                          <h2 class="fakeh1">High Performance</h2>
-                          <span class="divider-wave blue-wave"></span>
-                          <p></p>
-                          <p>Turbojets are known for outperforming almost all comparable craft on the water, whether it is pulling a waterskier, cruising along the coast or whipping in and out of tight corners. With top speeds of up to 53 mph/85 kph, jumping aboard
-                            a Turbojet and firing up the engine is a thrill you will never tire of.</p>
-                          <p></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="slider-3" class="feature-slide">
-                    <div class="block-wrap w50 new-feature-image-wrap mob-auto">
-                      <div class="block">
-                        <div class="feature-slide-image">
-                          <div class="" style="background-image:url('http://www.williamsjettenders.com/wp-content/uploads/2015/08/445-image2.jpg');">
-                            <img src="http://www.williamsjettenders.com/wp-content/uploads/2015/08/445-image2.jpg">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="block-wrap w50 center-content mob-auto">
-                      <div class="block">
-                        <div class="content-centered overview-text">
-                          <h2 class="fakeh1">Supreme Stability &amp; Buoyancy</h2>
-                          <span class="divider-wave blue-wave"></span>
-                          <p></p>
-                          <p>The Turbojet design places the helmsman at the stern of the craft in the most secure position for maximum control. By utilising a centrally mounted engine and an inflatable tube, which is positioned close to the water, the Turbojet is
-                            supremely stable whether static or running at speed. This makes for easy and comfortable passenger boarding and a safe, enjoyable ride at high speed. What’s more, due to the inherent hull buoyancy, the tender will float even without
-                            the inflatable tube.
-                          </p>
-                          <p></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="slider-4" class="feature-slide">
-                    <div class="block-wrap w50 new-feature-image-wrap mob-auto">
-                      <div class="block">
-                        <div class="feature-slide-image">
-                          <div class="" style="background-image:url('http://www.williamsjettenders.com/wp-content/uploads/2015/10/features32.jpg');">
-                            <img src="http://www.williamsjettenders.com/wp-content/uploads/2015/10/features32.jpg">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="block-wrap w50 center-content mob-auto">
-                      <div class="block">
-                        <div class="content-centered overview-text">
-                          <h2 class="fakeh1">More torque, less maintenance jet pumps</h2>
-                          <span class="divider-wave blue-wave"></span>
-                          <p></p>
-                          <p>Our purpose-made jet pumps are not only more efficient, they are also incredibly safe, as there are no exposed moving parts. With stainless steel impeller and double-coated pumps, they provide excellent protection against corrosion,
-                            giving you long life with minimal maintenance.</p>
-                          <p></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="slider-5" class="feature-slide">
-                    <div class="block-wrap w50 new-feature-image-wrap mob-auto">
-                      <div class="block">
-                        <div class="feature-slide-image">
-                          <div class="" style="background-image:url('http://www.williamsjettenders.com/wp-content/uploads/2015/10/features51.jpg');">
-                            <img src="http://www.williamsjettenders.com/wp-content/uploads/2015/10/features51.jpg">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="block-wrap w50 center-content mob-auto">
-                      <div class="block">
-                        <div class="content-centered overview-text">
-                          <h2 class="fakeh1">Manoeuvrability in all conditions</h2>
-                          <span class="divider-wave blue-wave"></span>
-                          <p></p>
-                          <p>Get pinpoint accuracy at both high and low speeds. The unique Turbojet hull, control system and jet pump make getting in and out of tight spots an easy task. Drive up to a yacht or handle confined spaces with utmost confidence. At the
-                            other end of the scale, you can open up the throttle for superior high-speed straightline tracking and precision controlled turns.</p>
-                          <p></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="slider-6" class="feature-slide">
-                    <div class="block-wrap w50 new-feature-image-wrap mob-auto">
-                      <div class="block">
-                        <div class="feature-slide-image">
-                          <div class="" style="background-image:url('http://www.williamsjettenders.com/wp-content/uploads/2015/08/325-image2.jpg');">
-                            <img src="http://www.williamsjettenders.com/wp-content/uploads/2015/08/325-image2.jpg">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="block-wrap w50 center-content mob-auto">
-                      <div class="block">
-                        <div class="content-centered overview-text">
-                          <h2 class="fakeh1">Clear Instrumentation</h2>
-                          <span class="divider-wave blue-wave"></span>
-                          <p></p>
-                          <p>Have peace of mind with instrumentation to keep you informed of what’s going on above and below the water. As well as standard instruments, you can specify optional extras such as depth sounder, vhf radio and chartplotter. You can even
-                            opt to have a removable steering wheel to make storage easier and as an effective anti-theft device.</p>
-                          <p></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="slider-7" class="feature-slide">
-                    <div class="block-wrap w50 new-feature-image-wrap mob-auto">
-                      <div class="block">
-                        <div class="feature-slide-image">
-                          <div class="" style="background-image:url('http://www.williamsjettenders.com/wp-content/uploads/2015/10/features61.jpg');">
-                            <img src="http://www.williamsjettenders.com/wp-content/uploads/2015/10/features61.jpg">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="block-wrap w50 center-content mob-auto">
-                      <div class="block">
-                        <div class="content-centered overview-text">
-                          <h2 class="fakeh1">Sitting comfortably</h2>
-                          <span class="divider-wave blue-wave"></span>
-                          <p></p>
-                          <p>The seating on a Turbojet is not only comfortable, it has been designed to keep you drier and more secure. With a commanding helm position from the stern, you can keep an eye on your passengers, and seat between three and seven adults.</p>
-                          <p></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="slider-8" class="feature-slide">
-                    <div class="block-wrap w50 new-feature-image-wrap mob-auto">
-                      <div class="block">
-                        <div class="feature-slide-image">
-                          <div class="" style="background-image:url('http://www.williamsjettenders.com/wp-content/uploads/2015/07/285-image1.jpg');">
-                            <img src="http://www.williamsjettenders.com/wp-content/uploads/2015/07/285-image1.jpg">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="block-wrap w50 center-content mob-auto">
-                      <div class="block">
-                        <div class="content-centered overview-text">
-                          <h2 class="fakeh1">Easily replaceable tubes</h2>
-                          <span class="divider-wave blue-wave"></span>
-                          <p></p>
-                          <p>The inflatable tubes on all Williams tenders have been designed to be removed and replaced, quickly and easily. So you can get back on the water with minimal fuss. </p>
-                          <p></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="controls new-feature-controls">
-                  <span class="control button-prev"></span>
-                  <span class="control button-next"></span>
-                </div>
-              </div>
-            </div>
-          </div>
+    </section>
+
+    <!-- review part -->
+
+    <div class="shipping-details py-5">
+        <div class="shipping"> 
+            <img src="assets/noun-product-1945515.svg" alt="">
+            <p>Every Fresh Products</p>
         </div>
-    </section>
-<!-- review part -->
+        <div class="shipping"> 
+            <img src="assets/noun-shipping-5125536.svg" alt="">
+            <p>Free Delivery For Order Over ₹499</p>
+        </div>
+        <div class="shipping"> 
+            <img src="assets/noun-offer-2804209.svg" alt="">
+            <p>Daily Mega Discounts</p>
+        </div>
+        <div class="shipping">
+            <img src="assets/noun-best-price-3592862.svg" alt="">
+            <p>Best Price On The Market</p>
+         </div>
+    </div>
 
-<!-- partner part -->
-    <section class="container-fluid py-5" id="partner-brand">
-        <h4 class="text-center">Our Partners</h4>
-        <marquee behavior="alternate" direction="left" class="mt-4">
-            <img src="https://cdn.shopify.com/s/files/1/0240/2942/9840/files/afaqs_7db9b879-8c1c-4a3d-920c-6aaebc67f6ff.png?v=1652696138" alt="">
-            <img src="https://cdn.shopify.com/s/files/1/0240/2942/9840/files/The_Free_Press_Journal_bc7072d9-3c77-4510-8d2a-00d3630282bf.png?v=1652696138" alt="">
-            <img src="https://cdn.shopify.com/s/files/1/0240/2942/9840/files/Economic_Times_11a78ab6-e6d6-4a82-a577-dd84c27bd9fb.png?v=1652696138" alt="">
-            <img src="https://cdn.shopify.com/s/files/1/0240/2942/9840/files/Business_News_This_Week_4ee474b5-dd4e-4395-a888-1d71f3fd1e03.png?v=1652696138" alt="">
-            <img src="https://cdn.shopify.com/s/files/1/0240/2942/9840/files/Economic_Times_11a78ab6-e6d6-4a82-a577-dd84c27bd9fb.png?v=1652696138" alt="">
-            <img src="https://cdn.shopify.com/s/files/1/0240/2942/9840/files/Financial_Express_13b63f57-eaf3-48af-befd-73a371a9980f.png?v=1652696138" alt="">
-            <img src="https://cdn.shopify.com/s/files/1/0240/2942/9840/files/Bollywood_Hungama_e91b989b-4e8d-4558-8671-5d839b92387c.png?v=1652696138" alt="">
-            <img src="https://cdn.shopify.com/s/files/1/0240/2942/9840/files/Business_World_dd2a668c-6572-4b41-b3b4-88b70541ee5b.png?v=1652696138" alt="">
-        </marquee>
-    </section>
-<!-- partner part -->
 
-<!-- footer part -->
+    <!-- footer part -->
     <footer class="container-fluid text-white py-5" id="footer">
         <div class="container">
             <div class="row mx-md-5 hr">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-4">
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item mb-5">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                              About Us
-                            </button>
-                          </h2>
-                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <a href="pages/discover-pages/our-story.html">Our Story</a>
-                                <a href="pages/discover-pages/contact.html">Contact Us</a>
-                                <a href="#">Our Blogs</a>
-                              </div>
-                          </div>
-                        </div>
-                      </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-3 mb-5">
+                    <h2>Soul Of Life</h2>
+                    <h6>Introducing Soul Of Life – A one-stop destination for all your Ayurvedic needs! At Soul Of Life,
+                        we are catering to over 100+ medicines from Our authentic brands, right at your fingertips.</h6>
+                    <div class="address d-flex">
+                        <i class="bi bi-house"></i>
+                        <p class="px-3">102/88-9, WAJIDPUR, JAJMAU, KANPUR NAGAR, UTTAR PRADESH, 208010</p>
+                    </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-4">
-                    <div class="quick-links">
-                        <h5>Quick Links</h5>
-                        <div class="links">
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-3 mb-5">
+                    <div class="about-us">
+                        <h5>Useful Links</h5>
+                        <div class="about-link">
+                            <a href="pages/discover-pages/our-story.html">Our Story</a>
+                            <a href="#">Our Blogs</a>
                             <a href="pages/discover-pages/contact.html">Contact Us</a>
                             <a href="pages/discover-pages/certification.html">Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-3 mb-5">
+                    <div class="quick-links">
+                        <h5>Policy</h5>
+                        <div class="links">
                             <a href="privacy-policy.html">Privacy Policy</a>
+                            <a href="order-&-shipping.html">Orders & Shipping</a>
                             <a href="terms-&-conditions.html">Term And Conditions</a>
                             <a href="return-&-refund.html">Refund & Cancellation</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-4">
-                    <h2>Nourish your inbox</h2>
-                    <h5>Your wellbeing check with specially curated tips, recipes and lifestyle support.</h5>
-                      <div class="social-links">
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-twitter"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
-                        <a href=""><i class="bi bi-youtube"></i></a>
-                      </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-3 mb-5">
+                    <h5>Contact Us</h5>
+                    <div class="contact d-flex">
+                        <i class="bi bi-telephone-fill"></i>
+                        <p class="ms-2">+91 7379431313</p>
+                    </div>
+                    <div class="mail d-flex">
+                        <i class="bi bi-envelope-fill"></i>
+                        <p class="ms-2">soupoflife2@gmail.com</p>
+                    </div>
+                    
+                    </div>
                 </div>
+
             </div>
         </div>
-        <div class="container">
+        <div class="container d-flex justify-content-between">
             <div class="row mx-md-5 mt-3">
-                <h5>Copyright 2024 © Soul Of Life</h5>
+                <h5>Copyright 2024 © S.I. Enterprises</h5>
+            </div>
+            <div class="social-links pe-5 mt-2 d-flex gap-3">
+                <a href="https://www.instagram.com/soupoflifeofficial/"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.facebook.com/soupoflifeofficial"><i class="bi bi-facebook"></i></a>
             </div>
         </div>
     </footer>
-<!-- footer part -->
+    <!-- footer part -->
 
 
 
@@ -911,6 +737,8 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="jquery/owl-carousel/owl.carousel.min.js"></script>
     <script src="script.js"></script>
+    <script src="https://use.fontawesome.com/1744f3f671.js"></script>
 
 </body>
+
 </html>

@@ -1,4 +1,4 @@
-    
+
     // carousel part
     $('.owl-carousel').owlCarousel({
         loop:true,
@@ -23,31 +23,24 @@
     
     // carousel part
 
-    // subscribe js
-    var subscribe_button = document.querySelector(".subscribe_button");
+    //add to cart part
+    let listProductHTML = document.querySelector('.listProduct');
+    let listCartHTML = document.querySelector('.listCart');
+    let iconCart = document.querySelector('.cart-icon');
+    let iconCartSpan = document.querySelector('.icon-cart span');
+    let body = document.querySelector('body');
+    let closeCart = document.querySelector('.close');
+    let products = [];
+    let cart = [];
 
-    subscribe_button.addEventListener('click', function(){
-	var subscribing = document.querySelector(".subscribing");
-	var thanks = document.querySelector(".thanks");
-	var login = document.querySelector(".login");
+    iconCart.addEventListener('click', () => {
+        body.classList.toggle('showCart');
+    })
+    closeCart.addEventListener('click', () => {
+        body.classList.toggle('showCart');
+    })
 
-	subscribing.classList.add("subscribing_active");
-	subscribe_button.classList.add("subscribe_button_active");
-	setTimeout(function(){
-		login.classList.add("login_active");
-	}, 1200);
-	setTimeout(function(){
-		thanks.classList.add("thanks_active");
-	}, 1400);
-
-	setTimeout(function(){
-		thanks.classList.remove("thanks_active");
-		login.classList.remove("login_active");
-		subscribing.classList.remove("subscribing_active");
-		subscribe_button.classList.remove("subscribe_button_active");
-	}, 4000);
-    });
-    // subscribe js
+    //add to cart part
 
 
     /*####################### Filter Buttons ####################################### */
@@ -91,26 +84,6 @@ function w3RemoveClass(element, name) {
 }
 
 
-/*####################### Filter Suche ####################################### */
-
-function searchFunction() {
-    // Declare variables
-    var input, filter, list, i;
-    input = document.getElementById('searchinput');
-    filter = input.value.toUpperCase();
-    list = document.getElementsByClassName('content');
-
-    // Loop through all list items, and hide those who don't match the search query
-    for (i = 0; i < list.length; i++) {
-        if (list[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
-            list[i].parentElement.parentElement.style.display = "";
-        } else {
-            list[i].parentElement.parentElement.style.display = "none";
-        }
-    }
-}
-
-
 var close = document.getElementsByClassName("closebtn");
 var i;
 
@@ -123,16 +96,116 @@ for (i = 0; i < close.length; i++) {
 }
 
 
-//review part js
-$(".button-next").click(function() {
-    var e = $(".feature-slide.active");
-    $(e).removeClass("active"), 
-    $(e).next().addClass("active"), 
-    $(".feature-slide").hasClass("active") || $(".feature-slide:first").addClass("active")
-  });
-  
-  $(".button-prev").click(function() {
-    var e = $(".feature-slide.active");
-    $(e).removeClass("active"), $(e).prev().addClass("active"), $(".feature-slide").hasClass("active") || $(".feature-slide:last").addClass("active")
-  });
-//review part js
+
+
+// testimonial
+
+'use strict'
+var	testim = document.getElementById("testim"),
+		testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
+    testimContent = Array.prototype.slice.call(document.getElementById("testim-content").children),
+    testimLeftArrow = document.getElementById("left-arrow"),
+    testimRightArrow = document.getElementById("right-arrow"),
+    testimSpeed = 4500,
+    currentSlide = 0,
+    currentActive = 0,
+    testimTimer,
+		touchStartPos,
+		touchEndPos,
+		touchPosDiff,
+		ignoreTouch = 30;
+;
+
+window.onload = function() {
+
+    // Testim Script
+    function playSlide(slide) {
+        for (var k = 0; k < testimDots.length; k++) {
+            testimContent[k].classList.remove("active");
+            testimContent[k].classList.remove("inactive");
+            testimDots[k].classList.remove("active");
+        }
+
+        if (slide < 0) {
+            slide = currentSlide = testimContent.length-1;
+        }
+
+        if (slide > testimContent.length - 1) {
+            slide = currentSlide = 0;
+        }
+
+        if (currentActive != currentSlide) {
+            testimContent[currentActive].classList.add("inactive");            
+        }
+        testimContent[slide].classList.add("active");
+        testimDots[slide].classList.add("active");
+
+        currentActive = currentSlide;
+    
+        clearTimeout(testimTimer);
+        testimTimer = setTimeout(function() {
+            playSlide(currentSlide += 1);
+        }, testimSpeed)
+    }
+
+    testimLeftArrow.addEventListener("click", function() {
+        playSlide(currentSlide -= 1);
+    })
+
+    testimRightArrow.addEventListener("click", function() {
+        playSlide(currentSlide += 1);
+    })    
+
+    for (var l = 0; l < testimDots.length; l++) {
+        testimDots[l].addEventListener("click", function() {
+            playSlide(currentSlide = testimDots.indexOf(this));
+        })
+    }
+
+    playSlide(currentSlide);
+
+    // keyboard shortcuts
+    document.addEventListener("keyup", function(e) {
+        switch (e.keyCode) {
+            case 37:
+                testimLeftArrow.click();
+                break;
+                
+            case 39:
+                testimRightArrow.click();
+                break;
+
+            case 39:
+                testimRightArrow.click();
+                break;
+
+            default:
+                break;
+        }
+    })
+		
+		testim.addEventListener("touchstart", function(e) {
+				touchStartPos = e.changedTouches[0].clientX;
+		})
+	
+		testim.addEventListener("touchend", function(e) {
+				touchEndPos = e.changedTouches[0].clientX;
+			
+				touchPosDiff = touchStartPos - touchEndPos;
+			
+				console.log(touchPosDiff);
+				console.log(touchStartPos);	
+				console.log(touchEndPos);	
+
+			
+				if (touchPosDiff > 0 + ignoreTouch) {
+						testimLeftArrow.click();
+				} else if (touchPosDiff < 0 - ignoreTouch) {
+						testimRightArrow.click();
+				} else {
+					return;
+				}
+			
+		})
+}
+// testimonial
