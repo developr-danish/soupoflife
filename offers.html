@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offers</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="jquery/owl-carousel/owl.carousel.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        <style>
+            #offer h1{
+                text-align: center;
+                letter-spacing: 4px;
+              }
+              #offer img{
+                margin-bottom: 1.5rem;
+              }
+        </style>
+</head>
+<body>
+
+      <!-- navbar part -->
+
+      <nav class="navbar navbar-expand-lg fixed-top px-md-5">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://soupoflife.in"><img src="assets/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/product-pages/all-products.html" aria-current="page">View
+                                All Products
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Shop</a>
+                            <div class="dropdown-menu" id="mega-menu" aria-labelledby="dropdownId">
+                                <div class="shop-all">
+                                    <div class="just-in">
+                                        <h4>SHOP ALL</h4>
+                                        <h4 class="mt-4">Just In</h4>
+                                        <a class="dropdown-item" href="#">• Pure Himalayan Shilajit</a>
+                                        <a class="dropdown-item" href="#">• Wellness Tea</a>
+                                    </div>
+                                    <div class="shop-by-category">
+                                        <h4 class="mt-4">Shop By Category</h4>
+                                        <a class="dropdown-item" href="pages/product-pages/mens-category.html">•
+                                            Nutrition for Men</a>
+                                        <a class="dropdown-item" href="pages/product-pages/women-category.html">•
+                                            Nutrition for Women </a>
+                                        <a class="dropdown-item" href="#">• Bestsellers</a>
+                                        <a class="dropdown-item" href="#">• Combos</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Discover</a>
+                            <div class="dropdown-menu" id="mega-menu2" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="pages/discover-pages/our-story.html">Our Story</a>
+                                <a class="dropdown-item" href="pages/discover-pages/why-us.html">Why Us</a>
+                                <a class="dropdown-item"
+                                    href="pages/discover-pages/certification.html">Media/Certificates</a>
+                                <a class="dropdown-item" href="pages/discover-pages/contact.html">Contact Us</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" aria-current="page">Blog
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" aria-current="page">Build a Box
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="offers.html" aria-current="page">Offers
+                            </a>
+                        </li>
+                    </ul>
+                    <form class="d-flex align-items-center my-2 my-lg-0">
+                        <i id="user" class="bi bi-person"></i>
+                        <div class="search-box">
+                            <button type="button" class="btn-search"><i class="bi bi-search"></i></button>
+                            <input type="text" class="input-search" placeholder="Type to Search...">
+                          </div>
+                        <div class="cart-icon">
+                            <i class="bi bi-cart-dash"></i>
+                            <span class="counter">0</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- navbar part -->
+
+    <section id="offer" class="container py-5">
+        <h1>-Offer-</h1>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <a href="">
+                    <img class="w-100" src="https://www.justherbs.in/cdn/shop/files/holi2024_buy_4_at_1149_Offer_page_520x.jpg?v=1711004852" alt="">
+                </a>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <a href="">
+                    <img class="w-100" src="https://www.justherbs.in/cdn/shop/files/30_off_Rakhi_gifts_520x.jpg?v=1711018643" alt="">
+                </a>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <a href="">
+                    <img class="w-100" src="https://www.justherbs.in/cdn/shop/files/Buy_Any_5_offer_page_updated_520x.jpg?v=1710307376" alt="">
+                </a>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <a href="">
+                    <img class="w-100" src="https://www.justherbs.in/cdn/shop/files/Vday_Offer_Page_fragrances_520x.jpg?v=1706788938" alt="">
+                </a>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <a href="">
+                    <img class="w-100" src="https://www.justherbs.in/cdn/shop/files/Vday_Offer_Page_5-skincare_520x.jpg?v=1706788776" alt="">
+                </a>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <a href="">
+                    <img class="w-100" src="https://www.justherbs.in/cdn/shop/files/Vday_Offer_Page_4-makeup_520x.jpg?v=1706788794" alt="">
+                </a>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <a href="">
+                    <img class="w-100" src="https://www.justherbs.in/cdn/shop/files/image_2_520x.png?v=1707458105" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
+    
+
+
+     <!-- footer part -->
+     <footer class="container-fluid text-white py-5" id="footer">
+        <div class="container">
+            <div class="row mx-md-5 hr">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-3 mb-5">
+                    <h2>Soul Of Life</h2>
+                    <h6>Introducing Soul Of Life – A one-stop destination for all your Ayurvedic needs! At Soul Of Life,
+                        we are catering to over 100+ medicines from Our authentic brands, right at your fingertips.</h6>
+                    
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-3 mb-5">
+                    <div class="about-us">
+                        <h5>Useful Links</h5>
+                        <div class="about-link">
+                            <a href="pages/discover-pages/our-story.html">Our Story</a>
+                            <a href="#">Our Blogs</a>
+                            <a href="pages/discover-pages/contact.html">Contact Us</a>
+                            <a href="pages/discover-pages/certification.html">Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-3 mb-5">
+                    <div class="quick-links">
+                        <h5>Policy</h5>
+                        <div class="links">
+                            <a href="privacy-policy.html">Privacy Policy</a>
+                            <a href="order-&-shipping.html">Orders & Shipping</a>
+                            <a href="terms-&-conditions.html">Term And Conditions</a>
+                            <a href="return-&-refund.html">Refund & Cancellation</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-3 mb-5">
+                    <h5>Contact Us</h5>
+                    <div class="contact d-flex">
+                        <i class="bi bi-telephone-fill"></i>
+                        <p class="ms-2">+91 7379431313</p>
+                    </div>
+                    <div class="mail d-flex">
+                        <i class="bi bi-envelope-fill"></i>
+                        <p class="ms-2">soupoflife2@gmail.com</p>
+                    </div>
+                    <div class="address d-flex">
+                        <i class="bi bi-house"></i>
+                        <p class="px-3">102/88-9, WAJIDPUR, JAJMAU, KANPUR NAGAR, UTTAR PRADESH, 208010</p>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container d-flex justify-content-between">
+            <div class="row mx-md-5 mt-3">
+                <h5>Copyright 2024 © S.I. Enterprises</h5>
+            </div>
+            <div class="social-links pe-5 mt-2 d-flex gap-3">
+                <a href="https://www.instagram.com/soupoflifeofficial/"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.facebook.com/soupoflifeofficial"><i class="bi bi-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- footer part -->
+
+</body>
+</html>

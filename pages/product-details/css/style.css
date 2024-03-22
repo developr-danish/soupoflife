@@ -73,7 +73,7 @@ h2 {
     }    
   @media (max-width: 991.98px) {
     .media-29101 .text {
-      padding: 20px;
+      padding: 20px 5px;
       width: 100%; } }
   .media-29101 .text .category {
     color: #adb5bd;
