@@ -7,7 +7,8 @@
         responsive:{
             0:{
                 items:2,
-                nav:true
+                nav:true,
+                loop:false
             },
             600:{
                 items:3,

@@ -21,7 +21,7 @@
     font-weight: 600 !important;
 }
 .small-desc p{
-    font-weight: 100 !important;
+    font-weight: 200 !important;
 }
 .highliter{
     text-align: center;
@@ -54,19 +54,26 @@
 
 
 #btn-cart{
+    width: 100%;
     display: block;
     border: none;
     margin-top: 1rem;
-    padding: 0.3rem 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.729);
-    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    border:none;
     font-size: 1.1rem;
     transition: 0.4s;
-    color: #7EA4B1;
+    background-color: #7EA4B1;
+    color: #fff;
 }
 #btn-cart:hover{
-    background-color:#7EA4B1;
-    color: #fff;
+    background-color: #6d909c;
+}
+.card-title{
+    padding:0.2rem 1rem;
+    margin-top: 1rem;
+}
+.card-text{
+    padding:0.2rem 1rem;
 }
 .hr{
     margin-top: 2rem;
@@ -97,5 +104,8 @@
 }
 .shipping p{
     margin: 0;
+}
+.card{
+    margin-bottom: 1rem;
 }
 /* shipping details part start from here */
