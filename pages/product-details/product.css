@@ -45,6 +45,23 @@
     color: #7EA4B1;
     font-weight: 600 !important;
 }
+@media (max-width:767px) {
+    .highliter{
+        text-align: center;
+        margin-right: 5rem;
+        margin-left: 2rem;
+    }
+    .highliter .col-2:nth-child(2){
+        margin: 0px auto;
+    }
+    .highliter p{
+        font-size: 10px;
+        text-align: center;
+    } 
+    .product-name h3{
+        margin-top: 2rem;
+    }  
+}
 /* product details part */
 
 /* tab content */

@@ -22,7 +22,7 @@ marquee li{
     width: 40px;
     height: 40px;
     position: absolute;
-    bottom: 4rem;
+    bottom: 5rem;
     right: 1rem;
     border-radius: 50%;
     display: flex;
@@ -223,12 +223,12 @@ font-size: 1.5rem;
 /* main page banner  */
 @media (max-width:767px) {
     #carouselslider{
-        height: 70vh;
+        display: none;
     }  
-    #carouselslider img{
-        height: 70vh;
-        object-fit: cover;
-        object-position: center;
+}
+@media (min-width:1024px) {
+    #mobile-slider{
+        display: none;
     }
 }
 /* main page banner  */
