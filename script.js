@@ -25,21 +25,6 @@
     // carousel part
 
     //add to cart part
-    let listProductHTML = document.querySelector('.listProduct');
-    let listCartHTML = document.querySelector('.listCart');
-    let iconCart = document.querySelector('.cart-icon');
-    let iconCartSpan = document.querySelector('.icon-cart span');
-    let body = document.querySelector('body');
-    let closeCart = document.querySelector('.close');
-    let products = [];
-    let cart = [];
-
-    iconCart.addEventListener('click', () => {
-        body.classList.toggle('showCart');
-    })
-    closeCart.addEventListener('click', () => {
-        body.classList.toggle('showCart');
-    })
 
     //add to cart part
 
@@ -210,3 +195,34 @@ window.onload = function() {
 		})
 }
 // testimonial
+
+
+// added to cart notification
+const decreaseNumber = () => {
+    var itemval = document.getElementById('textbox');
+    var price = document.getElementById('productPrice')
+    var totalprice = document.getElementById('totalPrice')
+    if (itemval.value <= 1) {
+      itemval.value = 1;
+    } else {
+      itemval.value = parseInt(itemval.value) - 1;
+      price.innerHTML = parseInt(price.innerHTML) - 599.00;
+      totalprice.innerHTML = price.innerHTML;
+    }
+  };
+  
+  
+  const increasNumber = () => {
+      var itemval = document.getElementById('textbox');var totalprice = document.getElementById('totalPrice')
+      var price = document.getElementById('productPrice')
+      var totalprice = document.getElementById('totalPrice')
+      if (itemval.value >= 5) {
+          alert("Max 5 Quantity Allowed")
+      } else {
+        itemval.value = parseInt(itemval.value) + 1;
+        price.innerHTML = parseInt(price.innerHTML) + 599.00;
+        totalprice.innerHTML = price.innerHTML;
+      }
+    };
+    
+// added to cart notification

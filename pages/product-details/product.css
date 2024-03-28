@@ -65,7 +65,13 @@
 /* product details part */
 
 /* tab content */
-
+.page-link{
+    text-align: center;
+    width: 20px;
+}
+.page-item:focus{
+    box-shadow: none;
+}
 /* tab content */
 
 
