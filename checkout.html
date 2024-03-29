@@ -105,10 +105,10 @@
                                 <p class="text-danger" id="error"></p>
                                   <input type="checkbox" class="me-1 mb-3"><label for="checkbox">Send me order updates and offers</label>
                                 <div class="otp-box">
-                                    <input  type="tel" name="" id="login" placeholder="Enter Otp" class="form-control">
+                                    <input  type="tel" name="" id="login" placeholder="Enter OTP" class="form-control">
                                 </div>
-                                <button onclick="showOtp()" class="form-control otp-btn">Get OTP</button>
-                                <input type="submit" class="form-control d-none submit-btn rounded text-white" " id="submit" value="Submit">
+                                <button onclick="showOtp()" id="otp-btn" class="form-control">Get OTP</button>
+                                <input type="submit" class="form-control rounded" " id="submit" value="Submit">
                             </form>
                               </div>
                               
@@ -137,8 +137,8 @@
             if(mobileverification.length == 10){
                 document.getElementById("error").innerHTML = ""
                 document.getElementById('login').style.display = "block"
-                // document.getElementsByClassName('otp-btn').style.display = "none"
-                // document.getElementsByClassName('submit-btn').style.display = "block"
+                document.getElementById('otp-btn').style.display = "none"
+                document.getElementById('submit').style.display = "block"
                 mobileStatus =true;
             }else{
                 document.getElementById("error").innerHTML = "Please Enter 10 Digit Mobile Number *"
@@ -157,13 +157,8 @@
         return false
         }
         }
+
         
-
-
-        // function showOtp(){
-        //     document.getElementById('login').style.display = "block"
-        //     document.getElementById('submit').innerHTML = "Submit";
-        // }
 
     </script>
 </body>
