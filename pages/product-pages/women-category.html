@@ -74,11 +74,8 @@
     <nav class="navbar navbar-expand-lg fixed-top px-md-5">
         <div class="container-fluid">
             <a class="navbar-brand" href="https://soupoflife.in"><img src="../../assets/logo.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+            
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -86,7 +83,7 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-center flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link" href="all-products.html" aria-current="page">View
+                            <a class="nav-link" href="../product-pages/all-products.html" aria-current="page">View
                                 All Products
                             </a>
                         </li>
@@ -103,9 +100,9 @@
                                     </div>
                                     <div class="shop-by-category">
                                         <h4 class="mt-4">Shop By Category</h4>
-                                        <a class="dropdown-item" href="mens-category.html">•
+                                        <a class="dropdown-item" href="../product-pages/mens-category.html">•
                                             Nutrition for Men</a>
-                                        <a class="dropdown-item" href="women-category.html">•
+                                        <a class="dropdown-item" href="../product-pages/women-category.html">•
                                             Nutrition for Women </a>
                                         <a class="dropdown-item" href="#">• Bestsellers</a>
                                         <a class="dropdown-item" href="#">• Combos</a>
@@ -138,21 +135,101 @@
                         </li>
                     </ul>
                     <form class="d-flex align-items-center my-2 my-lg-0">
-                        <i id="user" class="bi bi-person"></i>
                         <div class="search-box">
                             <button type="button" class="btn-search"><i class="bi bi-search"></i></button>
                             <input type="text" class="input-search" placeholder="Type to Search...">
-                          </div>
-                        <div class="cart-icon">
-                            <i class="bi bi-cart-dash"></i>
-                            <span class="counter">0</span>
                         </div>
+                        <i id="user" class="bi bi-person"></i>
+                        
                     </form>
                 </div>
+            </div>
+            <div class="d-flex gap-1">
+                <div class="cart-icon ">
+                    <button class="cart-btn" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <i class="cart-bar bi bi-cart-dash"></i>
+                    </button>
+                    <span class="counter">1</span>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
         </div>
     </nav>
     <!-- navbar part -->
+
+    <!-- cart menu -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="text-end"> <i class="fa fa-close close" data-bs-dismiss="modal"></i> </div>
+                    <h5 class="text-uppercase text-center">Shopping Cart</h5>
+                    <div class="px-md-2 py-3">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="row product-details">
+                                    <div class="col-3 mb-3 text-center"><h6 class="fw-bold">Product</h6></div>
+                                    <div class="col-3 mb-3 text-center"><h6 class="fw-bold">Name</h6></div>
+                                    <div class="col-3 mb-3"><h6 class="fw-bold">Qty</h6></div>
+                                    <div class="col-3 mb-3"><h6 class="fw-bold">Price</h6></div>
+                                </div>
+                                <div class="shopping-cart p-2">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img class="w-100 object-fit" src="../../assets/shilajit product-2.png" alt="">
+                                        </div>
+                                        <div class="col-9">
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-4 d-flex flex-wrap align-items-center">
+                                                    <p>Ashwagandha capsules</p>
+                                                </div>
+                                                <div class="col-sm-12 col-md-4 d-flex align-items-center">
+                                                    <div class="btn-group border" role="group" aria-label="Basic example">
+                                                        <button onclick="decreaseNumber()" type="button" class="btn"><i class="bi bi-dash"></i></button>
+                                                        <input class="page-link" type="text" name="" id="textbox" value="1">
+                                                        <button onclick="increasNumber()" type="button" class="btn"><i class="bi bi-plus"></i></button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 col-md-4 d-flex justify-content-between align-items-center mt-3">
+                                                        <p>₹ <span id="productPrice">599</span>.00</p>
+                                                        <i class="bi bi-trash"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr/>
+                                </div>
+                                
+                                
+                                <div class="coupon d-flex">
+                                    <div class="row">
+                                        <div class="col-sm-7 col-md-8 mb-3">
+                                            <input type="text" name="" id="" class="form-control">
+                                        </div>
+                                        <div class="col-sm-4 col-md-4">
+                                            <button class="coupon-btn btn btn-success">Apply Coupon</button>
+                                        </div>
+                                    </div>
+                                </div>
+                              
+                                <div class="d-flex justify-content-between mt-5">
+                                    <h5>Total</h5>
+                                    <p>₹ <span id="totalPrice">599</span>.00</p>
+                                </div>
+                            </div>
+                        </div> 
+                    <div class="text-center mt-2">
+                        <a href="checkout.html"><button class="btn btn-danger">Checkout</button></a>
+                    </div>                   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- cart menu -->
 
     <!-- whatsapp & arrow content -->
     <div class="whatsapp">
@@ -305,6 +382,39 @@
     </div>
     </footer>
     <!-- footer part -->
+
+    <script src="https://use.fontawesome.com/1744f3f671.js"></script>
+    <script>
+        // added to cart notification
+    const decreaseNumber = () => {
+    var itemval = document.getElementById('textbox');
+    var price = document.getElementById('productPrice')
+    var totalprice = document.getElementById('totalPrice')
+    if (itemval.value <= 1) {
+      itemval.value = 1;
+    } else {
+      itemval.value = parseInt(itemval.value) - 1;
+      price.innerHTML = parseInt(price.innerHTML) - 599.00;
+      totalprice.innerHTML = price.innerHTML;
+    }
+    };
+  
+  
+    const increasNumber = () => {
+      var itemval = document.getElementById('textbox');var totalprice = document.getElementById('totalPrice')
+      var price = document.getElementById('productPrice')
+      var totalprice = document.getElementById('totalPrice')
+      if (itemval.value >= 5) {
+          alert("Max 5 Quantity Allowed")
+      } else {
+        itemval.value = parseInt(itemval.value) + 1;
+        price.innerHTML = parseInt(price.innerHTML) + 599.00;
+        totalprice.innerHTML = price.innerHTML;
+      }
+    };
+    
+// added to cart notification
+    </script>
     
 </body>
 </html>

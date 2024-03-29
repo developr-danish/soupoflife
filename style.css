@@ -331,6 +331,14 @@ font-size: 1.5rem;
 .card-body{
     padding: 0 !important;
 }
+.card-body h4{
+    margin: 0.5rem 0px;
+    padding: 0.1rem 0.5rem !important;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
 /* multi product part end from here */
 
 
