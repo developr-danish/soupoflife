@@ -164,14 +164,12 @@
                                             <div class="col-sm-12 col-md-4 d-flex flex-wrap align-items-center">
                                                 <p>Ashwagandha capsules</p>
                                             </div>
-                                            <div class="col-sm-12 col-md-4 d-flex align-items-center select-qty">
-                                                <select name="" id="">
-                                                    <option value="">1</option>
-                                                    <option value="">2</option>
-                                                    <option value="">3</option>
-                                                    <option value="">4</option>
-                                                    <option value="">5</option>
-                                                </select>
+                                            <div class="col-sm-12 col-md-4 d-flex align-items-center">
+                                                <div class="btn-group border" role="group" aria-label="Basic example">
+                                                    <button onclick="decreaseNumber()" type="button" class="btn"><i class="bi bi-dash"></i></button>
+                                                    <input class="page-link" type="text" name="" id="textbox" value="1">
+                                                    <button onclick="increasNumber()" type="button" class="btn"><i class="bi bi-plus"></i></button>
+                                                </div>
                                             </div>
                                             <div class="col-sm-12 col-md-4 d-flex justify-content-between align-items-center mt-3">
                                                     <p>₹ <span id="productPrice">599</span>.00</p>
