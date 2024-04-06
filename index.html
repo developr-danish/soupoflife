@@ -160,20 +160,22 @@
                                         <img class="w-100 object-fit" src="assets/shilajit-product-1.png" alt="">
                                     </div>
                                     <div class="col-9">
-                                        <div class="row">
-                                            <div class="col-sm-12 col-md-4 d-flex flex-wrap align-items-center">
-                                                <p>Ashwagandha capsules</p>
-                                            </div>
-                                            <div class="col-sm-12 col-md-4 d-flex align-items-center">
-                                                <div class="btn-group border" role="group" aria-label="Basic example">
-                                                    <button onclick="decreaseNumber()" type="button" class="btn"><i class="bi bi-dash"></i></button>
-                                                    <input class="page-link" type="text" name="" id="textbox" value="1">
-                                                    <button onclick="increasNumber()" type="button" class="btn"><i class="bi bi-plus"></i></button>
+                                        <div class="cart">
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-4 d-flex flex-wrap align-items-center">
+                                                    <p>Ashwagandha capsules</p>
                                                 </div>
-                                            </div>
-                                            <div class="col-sm-12 col-md-4 d-flex justify-content-between align-items-center mt-3">
-                                                    <p>₹ <span id="productPrice">599</span>.00</p>
-                                                    <i class="bi bi-trash"></i>
+                                                <div class="col-sm-12 col-md-4 d-flex align-items-center">
+                                                    <div class="btn-group border" role="group" aria-label="Basic example">
+                                                        <button onclick="decreaseNumber()" type="button" class="btn"><i class="bi bi-dash"></i></button>
+                                                        <input class="page-link" type="text" name="" id="textbox" value="1">
+                                                        <button onclick="increasNumber()" type="button" class="btn"><i class="bi bi-plus"></i></button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 col-md-4 d-flex justify-content-between align-items-center mt-3">
+                                                        <p>₹ <span id="productPrice">599</span>.00</p>
+                                                        <i class="bi bi-trash"></i>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -194,8 +196,8 @@
                             </div>
                           
                             <div class="d-flex justify-content-between mt-5">
-                                <h5>Total</h5>
-                                <p>₹ <span id="totalPrice">599</span>.00</p>
+                                <h5 >Total</h5>
+                                <p>₹ <span id="total">599</span>.00</p>
                             </div>
                         </div>
                     </div> 
@@ -316,7 +318,7 @@
                                 </h5>
                                 <button class="product-btn"><i class="bi bi-cart-dash"></i> Add To Cart</button>
                             </div>
-                        </div>
+                    </div>
                 </div>
                 <div class="p-2">
                     <div class="card">
@@ -502,191 +504,234 @@
 
     <!-- page-info -->
     <div class="about-page mt-5 pb-5">
-            <div class="container ">
-                <div class="row ">
-                    <div class="col-md-8 mx-auto text-center">
-                        <h2>Our powerful <span style="font-family: dancing-script;color:#263f2f">whole-food</span>
-                            ingredients and <br> <span style="font-family: dancing-script;color:#263f2f">full spectrum</span>
-                            herbal blends work synergistically <br> to enhance your daily wellbeing</h2>
+         <div class="container-md">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6">
+                    <div class="page-content">
+                        <h6>SKILLED TEACHERS</h6>
+                        <h1>Join our classes for quality yoga practice.</h1>
                     </div>
                 </div>
-                <div class="row mx-md-5 mt-4">
-                    <div class="col-6 col-md-2">
-                        <div class="data text-center">
-                            <img src="https://cdn-icons-png.flaticon.com/512/6857/6857883.png" alt="">
-                            <h6 class="mt-3">traceable-ingredients</h6>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-2">
-                        <div class="data text-center">
-                            <img src="https://icons.iconarchive.com/icons/roundicons/100-free-solid/256/science-icon.png"
-                                alt="">
-                            <h6 class="mt-3">Scientifically-Backed Formulations</h6>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-2">
-                        <div class="data text-center">
-                            <img src="https://cdn.icon-icons.com/icons2/2070/PNG/512/leaf_icon_126891.png" alt="">
-                            <h6 class="mt-3">traceable-ingredients</h6>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-2">
-                        <div class="data text-center">
-                            <img src="https://www.freeiconspng.com/uploads/black-and-dna-image-0.png" alt="">
-                            <h6 class="mt-3">traceable-ingredients</h6>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-2">
-                        <div class="data text-center">
-                            <img src="https://www.svgrepo.com/show/31916/molecule-science-symbol.svg" alt="">
-                            <h6 class="mt-3">traceable-ingredients</h6>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-2">
-                        <div class="data text-center">
-                            <img src="https://www.svgrepo.com/show/10493/globe-grid.svg" alt="">
-                            <h6 class="mt-3">traceable-ingredients</h6>
-                        </div>
+                <div class="col-12 col-sm-12 col-md-6">
+                    <div class="page-content">
+                        <p>Nutrico Yoga provide you a great opportunity to join our yoga classes. Learn the incredible healing power of Yoga 
+                            with best yoga trainers. These practices to reshape your life.</p>
                     </div>
                 </div>
             </div>
+            <div class="row mx-md-5">
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="page-content2">
+                        <div class="card2">
+                            <img src="https://cdn-icons-png.flaticon.com/512/6857/6857883.png" alt="">
+                            <h5>Mediation Relax</h5>
+                            <p>It give you a sense of calm, peace and balance that can benefit both your emotional well-being and you</p>
+                            <a href="">Read More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="page-content2">
+                        <div class="card2">
+                            <img src="https://icons.iconarchive.com/icons/roundicons/100-free-solid/256/science-icon.png" alt="">
+                            <h5>Relaxing and Spa</h5>
+                            <p>A relaxation massage treatment will usually involve flowing strokes and kneading and knowing something</p>
+                            <a href="">Read More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="page-content2">
+                        <div class="card2">
+                            <img src="https://cdn.icon-icons.com/icons2/2070/PNG/512/leaf_icon_126891.png" alt="">
+                            <h5>Healthy Herbal bar</h5>
+                            <p>It give you a sense of calm, peace and balance that can benefit both your emotional damage things</p>
+                            <a href="">Read More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="page-content2">
+                        <div class="card2">
+                            <img src="https://www.freeiconspng.com/uploads/black-and-dna-image-0.png" alt="">
+                            <h5>Breathing Techniques</h5>
+                            <p>It give you a sense of calm, peace and balance that can benefit both your emotional damage things</p>
+                            <a href="">Read More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+         </div>
     </div>
     <!-- page-info -->
 
     <!-- supplement part -->
     <section class="container" id="supplement">
-        <div class="row">
-            <div class="col-11 mx-auto">
-                <div class="supplement d-flex align-items-center">
-                    <div class="content">
-                        <h1>Future of clean <br> supplements</h1>
-                        <p>From developing advanced nano science to cultivating 6
-                            unique active probiotic strands, our team studies diets,
-                            genetics and technology to create evidence-based products
-                            that actually work.</p>
-                    </div>
+        <div class="row mx-md-5">
+            <div class="col-sm-12 col-md-6">
+                <div class="image">
+                    <img class="rounded" src="assets/man-lifting.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <div class="image">
+                    <p>ENJOY PRACTICE</p>
+                    <h1>Relaxing your body, mind and spirit</h1>
+                    <p>We believe in balance and taking a holistic approach to life. Builds lower body strength and improves arm. Our best yoga 
+                        & meditation classes aim to awaken new perspectives in your life.</p>
+                    <img class="rounded img2" src="assets/confident-kickboxer-training-studio.jpg" alt="">
                 </div>
             </div>
         </div>
     </section>
     <!-- supplement part -->
 
-    <!-- nutrition part -->
-    <section id="nutrition">
-        <div class="container py-5">
-            <div class="row mx-md-5">
-                <div class="col-12 col-sm-12 col-md-6">
-                    <img class="rounded w-100" src="assets/WEBSITE-BANNER-A.jpg" alt="">
-                </div>
-                <div class="col-12 col-sm-12 col-md-6 d-flex justify-content-center align-items-center">
-                    <div class="nut-data mt-3">
-                        <h1>Future of clean <br> supplements</h1>
-                        <p>From developing advanced nano science to cultivating 6
-                            unique active probiotic strands, our team studies diets,
-                            genetics and technology to create evidence-based products
-                            that actually work.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- nutrition part -->
-
     <!-- featured product -->
     <section class="container-fluid px-0 pb-5 pt-3 mb-5" id="featured">
-        <div class="container">
-            <h1 class="text-center fs-1">Featured Product</h1>
-            <div class="row">
-                <div class="owl-carousel">
-                    <!-- <div>
+            <div class="container">
+                <h1 class="text-center fs-1">Featured Product</h1>
+                <div class="row">
+                    <div class="owl-carousel">
+                        <!-- <div>
+                            <div class="card">
+                                <a href="pages/product-details/Milk-Thistle-Capsules.html">
+                                    <img class="card-img-top w-100" src="assets/milk-thruster.png" alt="Title" />
+                                </a>
+                                <div class="card-body">
+                                    <h4 class="card-title">Milk thistle capsules</h4>
+                                    <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span>
+                                    </h5>
+                                    <button class="product-btn"><i class="bi bi-cart-dash"></i> Add To Cart</button>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- <div>
+                            <div class="card">
+                                <a href="pages/product-details/Ashwagandha-Capsules.html"><img class="card-img-top w-100" src="assets/aswgandha.png" alt="Title" /></a>
+                                <div class="card-body">
+                                    <h4 class="card-title">Ashwagandha capsules</h4>
+                                    <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span>
+                                    </h5>
+                                    <button class="product-btn"><i class="bi bi-cart-dash"></i> Add To Cart</button>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div>
+                            <div class="card">
+                                <a href="pages/product-details/Omega-3-Fish-Oil.html"><img class="card-img-top w-100" src="assets/Omgea-3.png" alt="Title" /></a>
+                                <div class="card-body">
+                                    <h4 class="card-title">Omega 3 fish oil</h4>
+                                    <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span>
+                                    </h5>
+                                    <button class="product-btn"><i class="bi bi-cart-dash"></i> Add To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="card">
+                                <a href="pages/product-details/Shilajit resin.html"><img class="card-img-top w-100" src="assets/shilajit-product-1.png" alt="Title" /></a>
+                                <div class="card-body">
+                                    <h4 class="card-title">Shilajit resin</h4>
+                                    <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span>
+                                    </h5>
+                                    <button class="product-btn"> <i class="bi bi-cart-dash"></i> Add To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="card">
+                                <a href="pages/product-details/Shilajit-gold-Resin.html"><img class="card-img-top w-100" src="assets/shilajit product-2.png" alt="Title" /></a>
+                                <div class="card-body">
+                                    <h4 class="card-title">Shilajit gold resin</h4>
+                                    <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span>
+                                    </h5>
+                                    <button class="product-btn"><i class="bi bi-cart-dash"></i> Add To Cart</button>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card">
-                            <a href="pages/product-details/Milk-Thistle-Capsules.html">
-                                <img class="card-img-top w-100" src="assets/milk-thruster.png" alt="Title" />
+                            <a href="pages/product-details/Hair-Skin-And-Nail-Gummies.html">
+                                <img class="card-img-top w-100" src="assets/shilajit-product-3.png" alt="Title" />
                             </a>
-                            <div class="card-body">
-                                <h4 class="card-title">Milk thistle capsules</h4>
-                                <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span>
-                                </h5>
-                                <button class="product-btn"><i class="bi bi-cart-dash"></i> Add To Cart</button>
+                                <div class="card-body">
+                                    <h4 class="card-title">Hair skin and nail gummies</h4>
+                                    <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span>
+                                    </h5>
+                                    <button class="product-btn"><i class="bi bi-cart-dash"></i> Add To Cart</button>
+                                </div>
                             </div>
-                        </div>
-                    </div> -->
-                    <!-- <div>
-                        <div class="card">
-                            <a href="pages/product-details/Ashwagandha-Capsules.html"><img class="card-img-top w-100" src="assets/aswgandha.png" alt="Title" /></a>
-                            <div class="card-body">
-                                <h4 class="card-title">Ashwagandha capsules</h4>
-                                <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span>
-                                </h5>
-                                <button class="product-btn"><i class="bi bi-cart-dash"></i> Add To Cart</button>
+                        <!-- <div>
+                            <div class="card">
+                                <a href="pages/product-details/Shilajit-Gold-Capsules.html"><img class="card-img-top w-100"
+                                    src="https://drvaidyas.com/cdn/shop/products/Shilajit-Gold-Capsules_2a72fa32-b55b-4494-8af5-1648c533e996.png?v=1676966515"
+                                    alt="Title" /></a>
+                                <div class="card-body">
+                                    <h4 class="card-title">Shilajit gold capsules</h4>
+                                    <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span>
+                                    </h5>
+                                    <button class="product-btn"><i class="bi bi-cart-dash"></i> Add To Cart</button>
+                                </div>
                             </div>
-                        </div>
-                    </div> -->
-                    <div>
-                        <div class="card">
-                            <a href="pages/product-details/Omega-3-Fish-Oil.html"><img class="card-img-top w-100" src="assets/Omgea-3.png" alt="Title" /></a>
-                            <div class="card-body">
-                                <h4 class="card-title">Omega 3 fish oil</h4>
-                                <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span>
-                                </h5>
-                                <button class="product-btn"><i class="bi bi-cart-dash"></i> Add To Cart</button>
-                            </div>
-                        </div>
+                        </div> -->
                     </div>
-                    <div>
-                        <div class="card">
-                            <a href="pages/product-details/Shilajit resin.html"><img class="card-img-top w-100" src="assets/shilajit-product-1.png" alt="Title" /></a>
-                            <div class="card-body">
-                                <h4 class="card-title">Shilajit resin</h4>
-                                <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span>
-                                </h5>
-                                <button class="product-btn"> <i class="bi bi-cart-dash"></i> Add To Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="card">
-                            <a href="pages/product-details/Shilajit-gold-Resin.html"><img class="card-img-top w-100" src="assets/shilajit product-2.png" alt="Title" /></a>
-                            <div class="card-body">
-                                <h4 class="card-title">Shilajit gold resin</h4>
-                                <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span>
-                                </h5>
-                                <button class="product-btn"><i class="bi bi-cart-dash"></i> Add To Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <a href="pages/product-details/Hair-Skin-And-Nail-Gummies.html">
-                            <img class="card-img-top w-100" src="assets/shilajit-product-3.png" alt="Title" />
-                        </a>
-                            <div class="card-body">
-                                <h4 class="card-title">Hair skin and nail gummies</h4>
-                                <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span>
-                                </h5>
-                                <button class="product-btn"><i class="bi bi-cart-dash"></i> Add To Cart</button>
-                            </div>
-                        </div>
-                    <!-- <div>
-                        <div class="card">
-                            <a href="pages/product-details/Shilajit-Gold-Capsules.html"><img class="card-img-top w-100"
-                                src="https://drvaidyas.com/cdn/shop/products/Shilajit-Gold-Capsules_2a72fa32-b55b-4494-8af5-1648c533e996.png?v=1676966515"
-                                alt="Title" /></a>
-                            <div class="card-body">
-                                <h4 class="card-title">Shilajit gold capsules</h4>
-                                <h5 class="card-text">Rs.599 <span class="text-decoration-line-through">Rs.1098</span>
-                                </h5>
-                                <button class="product-btn"><i class="bi bi-cart-dash"></i> Add To Cart</button>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
             </div>
-        </div>
     </section>
     <!-- featured product -->
 
+    <!-- nutrition part -->
+   <section class="nutrition container-fluid">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-8 p-0">
+            <div class="nutrition-data">
+                <h6>Who We Are</h6>
+                <h1>We Are Best Nutrition</h1>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+                <hr/>
+                <div class="nut-symbol">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-6 d-flex">
+                            <img src="https://www.svgrepo.com/show/31916/molecule-science-symbol.svg" alt="">
+                            <div class="num-content">
+                                <h4>A Full Services</h4>
+                                <p>We are providing different services in this sector to wide</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-6 d-flex">
+                            <img src="https://www.svgrepo.com/show/10493/globe-grid.svg" alt="">
+                            <div class="num-content">
+                                <h4>A Full Services</h4>
+                                <p>We are providing different services in this sector to wide</p>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between mt-3">
+                            <p>Production</p>
+                            <p>85%</p>
+                        </div>
+                        <div style="height: 10px" class="progress rounded-pill">
+                            <div role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 85%; background: linear-gradient(to right, #5EAB46, #F4C249);" class="progress-bar rounded-pill"></div>
+                        </div>
+                        <div class="d-flex justify-content-between mt-3">
+                            <p>Marketting</p>
+                            <p>95%</p>
+                        </div>
+                        <div style="height: 10px" class="progress rounded-pill">
+                            <div role="progressbar" aria-valuenow="44" aria-valuemin="0" aria-valuemax="100" style="width: 95%; background: linear-gradient(to right, #5EAB46, #F4C249);" class="progress-bar rounded-pill"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-4 nut-img p-0">
+            <img class="w-100" src="https://img.freepik.com/free-photo/man-reading-magazine-dinner_23-2147793095.jpg?w=996" alt="">
+        </div>
+    </div>
+   </section>
+    <!-- nutrition part -->
+
     <!-- review part -->
-    <section id="testim" class="testim mt-5">
+    <section id="testim" class="testim">
         <!--         <div class="testim-cover"> -->
                     <div class="wrap">
                         <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
@@ -815,7 +860,6 @@
         </div>
     </footer>
     <!-- footer part -->
-
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="jquery/owl-carousel/owl.carousel.min.js"></script>
