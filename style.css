@@ -272,7 +272,7 @@ font-size: 1.5rem;
     font-weight: 400 !important;
 }
 .page-content h1{
-    font-size: 3.1rem;
+    font-size: 2.6vw;
     font-weight: 400 !important;
 }
 .page-content p{
@@ -303,6 +303,10 @@ font-size: 1.5rem;
 }
 .card2 h5{
     margin-top: 1rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
 }
 .card2 a{
     text-decoration: none;
@@ -431,7 +435,7 @@ font-size: 1.5rem;
 }
 .image h1{
     line-height: 1.2;
-    font-size: 3.3rem;
+    font-size: 2rem;
 }
 /* supplement part end from here */
 
